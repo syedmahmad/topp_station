@@ -1,22 +1,31 @@
+import axios from 'axios'
 import React, {
   useState,
   useReducer,
   useContext,
   useEffect,
   useCallback,
-} from "react";
+} from 'react'
+import BlogReducer from '../reducers/BlogReducer'
 // import { useRouteMatch, useHistory } from "react-router-dom";
 
-import { BlogContext } from '../context/BlogState';
-import data from "../Data/data";
+import { BlogContext } from '../context/BlogState'
+import data from '../Data/data'
+
+const initialState = {
+  blogs: null,
+  error: null,
+}
 
 const Search = (props) => {
-  const {getBlogs, getBlog, ...blogsState} = useContext(BlogContext);
-  const [searchData, setSearchData] = useState(props?.search || "");
-  const [searchInput, setSearchInput] = useState("");
-  const [filteredResults, setFilteredResults] = useState([]);
-  const [posts, setPosts] = useState([]);
-  const [sortBy, setSortBy] = useState("older");
+  const { getBlog, ...blogsState } = useContext(BlogContext)
+  const [searchData, setSearchData] = useState(props?.search || '')
+  const [searchInput, setSearchInput] = useState('')
+  const [filteredResults, setFilteredResults] = useState([])
+  const [originalPosts, setOriginalPosts] = useState([])
+  const [posts, setPosts] = useState([])
+  const [sortBy, setSortBy] = useState('older')
+  const [state, dispatch] = useReducer(BlogReducer, initialState)
 
   // let match = useRouteMatch("/search/:category");
   // let paramsCategory;
@@ -24,74 +33,98 @@ const Search = (props) => {
   //   paramsCategory = match.params.category
   // }
 
-  let paramsCategory;
+  let paramsCategory
   if (props?.search) {
-    paramsCategory = props?.search;
+    paramsCategory = props?.search
   }
 
-  useEffect(() => {
-    getBlogs().then((res) => {
-      setPosts(res)
-    });
-    var getValue = window.localStorage.getItem("searchInput");
+  useEffect( () => {
+    (async () => {
+      await axios
+      .get('api/getblogs')
+      .then(async (res) => {
+        dispatch({
+          type: 'BLOGS_LOADED',
+          payload: res.data,
+        })
+        await setPosts(res.data)
+        await setOriginalPosts(res.data)
+      })
+      .catch((err) => {
+        console.log(err.message)
+        dispatch({
+          type: 'BLOGS_ERROR',
+        })
+      })
+    var getValue = window.localStorage.getItem('searchInput')
     if (getValue != null) {
-      setSearchInput(getValue);
-      searchFunction(getValue);
-      window.localStorage.removeItem("searchInput");
+      setSearchInput(getValue)
+      searchFunction(getValue)
+      window.localStorage.removeItem('searchInput')
     }
     if (props?.search) {
-      searchItems(props?.search);
-      setSearchData(props?.search);
+      searchItems(props?.search)
+      setSearchData(props?.search)
     }
     // if (match && match.params.category) {
     //   searchItems(match.params.category);
     //   setSearchData(match.params.category);
     // }
-  }, [paramsCategory]);
+    })();
+  }, [paramsCategory])
 
   // Filter posts
   const searchItems = (searchValue) => {
-    setSearchInput(searchValue);
-    searchFunction(searchValue);
-  };
+    setSearchInput(searchValue)
+    searchFunction(searchValue)
+  }
   const searchArticle = () => {
-    searchFunction(searchInput);
-  };
+    searchFunction(searchInput)
+  }
   const searchFunction = (searchInput) => {
-    getBlogs().then((res) => {
-      if (searchInput !== "") {
-        const filteredData = res?.filter((item) => {
-          return Object.values(item)
-            .join("")
-            .toLowerCase()
-            .includes(searchInput.toLowerCase());
-        });
-        setPosts(filteredData);
-        //setFilteredResults(filteredData);
-      } else setPosts(res);
-    });
-  };
+    if (searchInput !== '') {
+      const filteredData = originalPosts?.filter((item) => {
+        return Object.values(item)
+          .join('')
+          .toLowerCase()
+          .includes(searchInput.toLowerCase())
+      })
+      console.log(filteredData, '///////filteredData')
+      if (filteredData.length > 0) {
+        setPosts(filteredData)
+      }
+
+      //setFilteredResults(filteredData);
+    } else setPosts(originalPosts)
+  }
   // Sort posts
   /** */
   function reverseArr(input) {
-    let ret = new Array();
+    let ret = new Array()
     for (let i = input.length - 1; i >= 0; i--) {
-      ret.push(input[i]);
+      ret.push(input[i])
     }
-    return ret;
+    return ret
   }
   /**/
   const renderPosts = (event) => {
-    const value = event.target.value.toLowerCase();
-    if (sortBy === "older" && value === "older") {
+    const value = event.target.value.toLowerCase()
+    if (sortBy === 'older' && value === 'older') {
     } else {
-      setSortBy(value);
-      let newPosts = reverseArr(posts);
-      setPosts(newPosts);
+      setSortBy(value)
+      let newPosts = reverseArr(posts)
+      setPosts(newPosts)
     }
-  };
+  }
 
-  const dateOptions = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hours: 'numeric', minutes: 'numeric'};
+  const dateOptions = {
+    weekday: 'long',
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+    hours: 'numeric',
+    minutes: 'numeric',
+  }
 
   return (
     <>
@@ -108,7 +141,7 @@ const Search = (props) => {
                 placeholder="search articles"
                 value={searchInput}
                 style={{
-                  boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px",
+                  boxShadow: 'rgba(100, 100, 111, 0.2) 0px 7px 29px 0px',
                 }}
                 onChange={(e) => searchItems(e.target.value)}
               />
@@ -127,7 +160,9 @@ const Search = (props) => {
             <div className="col-6 search__main-heading-wrapper">
               <h2 className="h1 search__main-heading">
                 Search Results
-                <img
+                {
+                  // eslint-disable-next-line @next/next/no-img-element
+               }<img
                   className="design"
                   src="images/brown-underline.png"
                   alt=""
@@ -163,7 +198,9 @@ const Search = (props) => {
                         <div className="col-md-4">
                           <div className="img-outer-tab-sec">
                             <a href={`/blog/${blog._id}`} title="">
-                              <img src={blog.image} alt="" />
+                              {
+                                // eslint-disable-next-line @next/next/no-img-element
+                              }<img src={blog.image} alt="" />
                             </a>
                           </div>
                         </div>
@@ -180,13 +217,17 @@ const Search = (props) => {
                                 <a href={`/blog/${blog._id}`}>
                                   <span className="info-sec-main">
                                     <span className="icn-main">
-                                      <img
+                                      {
+                                        // eslint-disable-next-line @next/next/no-img-element
+                                     }<img
                                         src="images/clock.png"
                                         alt=""
                                         className="icn-image-clock-&-user"
                                       />
                                     </span>
-                                    {new Date(blog.creationDate).toLocaleDateString("en-US", dateOptions)}
+                                    {new Date(
+                                      blog.creationDate,
+                                    ).toLocaleDateString('en-US', dateOptions)}
                                   </span>
                                 </a>
                               </div>
@@ -194,7 +235,9 @@ const Search = (props) => {
                                 <a href={`/blog/${blog._id}`}>
                                   <span className="info-sec-main">
                                     <span className="icn-main">
-                                      <img
+                                      {
+                                        // eslint-disable-next-line @next/next/no-img-element
+                                     }<img
                                         src="images/user.png"
                                         alt=""
                                         className="icn-image-clock-&-user"
@@ -206,7 +249,11 @@ const Search = (props) => {
                               </div>
                               <div className="categories">
                                 {blog.tags.map((tag, index) => {
-                                  return <a href={`/search/${tag}`} key={index}>{tag}</a>
+                                  return (
+                                    <a href={`/search/${tag}`} key={index}>
+                                      {tag}
+                                    </a>
+                                  )
                                 })}
                               </div>
                             </div>
@@ -214,7 +261,7 @@ const Search = (props) => {
                         </div>
                       </div>
                     </div>
-                  );
+                  )
                 })}
               </div>
             </div>
@@ -222,7 +269,7 @@ const Search = (props) => {
         </div>
       </section>
     </>
-  );
-};
+  )
+}
 
-export default Search;
+export default Search

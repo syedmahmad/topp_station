@@ -1,12 +1,11 @@
-import React, { useState } from "react";
-
+import React, { useState } from 'react'
 
 const Wrapper = (props) => {
-  const [isActive, setIsActive] = useState(true);
+  const [isActive, setIsActive] = useState(true)
 
   const closeCookies = () => {
-    setIsActive(false);
-  };
+    setIsActive(false)
+  }
 
   return (
     <>
@@ -19,8 +18,12 @@ const Wrapper = (props) => {
         "
         >
           <div className="container d-flex mobile-grid gap-2">
-            <a href="/" className="navbar-brand text-center">
-              <img src="/images/logo.svg" className="nav-logo" alt="Logo" />
+            {
+// eslint-disable-next-line 
+            }<a href="/" className="navbar-brand text-center">
+              {
+                // eslint-disable-next-line @next/next/no-img-element
+              }<img src="/images/logo.svg" className="nav-logo" alt="Logo" />
             </a>
             <button
               className="navbar-toggler order-first order-md-0"
@@ -31,24 +34,32 @@ const Wrapper = (props) => {
               <span className="navbar-toggler-icon"></span>
             </button>
             <div className="header-chat-btn  d-md-none">
-              <a href="/about-us" title="" className="d-inline-block">
+              {
+// eslint-disable-next-line 
+            }<a href="/about-us" title="" className="d-inline-block">
                 Chat With Us
               </a>
             </div>
             <div className="collapse navbar-collapse w-100" id="mynavbar">
               <ul className="navbar-nav w-100 justify-content-center">
                 <li className="nav-item active">
-                  <a className="nav-link" href="/">
+                  {
+// eslint-disable-next-line 
+            }<a className="nav-link" href="/">
                     Home
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="./about-us">
+                  {
+// eslint-disable-next-line 
+            }<a className="nav-link" href="./about-us">
                     About Us
                   </a>
                 </li>
                 <li className="nav-item dropdown position-static">
-                  <a
+                  {
+// eslint-disable-next-line 
+            }<a
                     className="nav-link dropdown-toggle"
                     href="#"
                     role="button"
@@ -103,23 +114,33 @@ const Wrapper = (props) => {
                               data-bs-parent="#accordion"
                             >
                               <li>
-                                <a href="/search/Business Accounting">
+                                {
+// eslint-disable-next-line 
+            }<a href="/search/Business Accounting">
                                   Business Accounting
                                 </a>
                               </li>
                               <li>
-                                <a href="/search/Business law">Business law</a>
+                                {
+// eslint-disable-next-line 
+            }<a href="/search/Business law">Business law</a>
                               </li>
                               <li>
-                                <a href="/search/Business Taxes">
+                                {
+// eslint-disable-next-line 
+            }<a href="/search/Business Taxes">
                                   Business Taxes
                                 </a>
                               </li>
                               <li>
-                                <a href="/search/Budget">Budget</a>
+                                {
+// eslint-disable-next-line 
+            }<a href="/search/Budget">Budget</a>
                               </li>
                               <li>
-                                <a href="/search/Board Dynamics">
+                                {
+// eslint-disable-next-line 
+            }<a href="/search/Board Dynamics">
                                   Board Dynamics
                                 </a>
                               </li>
@@ -168,18 +189,26 @@ const Wrapper = (props) => {
                               data-bs-parent="#accordion"
                             >
                               <li>
-                                <a href="/search/Closing your business">
+                                {
+// eslint-disable-next-line 
+            }<a href="/search/Closing your business">
                                   Closing your business
                                 </a>
                               </li>
                               <li>
-                                <a href="/search/Contract Law">Contract Law</a>
+                                {
+// eslint-disable-next-line 
+            }<a href="/search/Contract Law">Contract Law</a>
                               </li>
                               <li>
-                                <a href="/search/Copyrights">Copyrights</a>
+                                {
+// eslint-disable-next-line 
+            }<a href="/search/Copyrights">Copyrights</a>
                               </li>
                               <li>
-                                <a href="/search/Corporate Law">
+                                {
+// eslint-disable-next-line 
+            }<a href="/search/Corporate Law">
                                   Corporate Law
                                 </a>
                               </li>
@@ -230,15 +259,21 @@ const Wrapper = (props) => {
                               data-bs-parent="#accordion"
                             >
                               <li>
-                                <a href="/search/Employment Law">
+                                {
+// eslint-disable-next-line 
+            }<a href="/search/Employment Law">
                                   Employment Law
                                 </a>
                               </li>
                               <li>
-                                <a href="/search/Equal Rights">Equal Rights</a>
+                                {
+// eslint-disable-next-line 
+            }<a href="/search/Equal Rights">Equal Rights</a>
                               </li>
                               <li>
-                                <a href="/search/Employment Passes">
+                                {
+// eslint-disable-next-line 
+            }<a href="/search/Employment Passes">
                                   Employment Passes
                                 </a>
                               </li>
@@ -287,17 +322,23 @@ const Wrapper = (props) => {
                               data-bs-parent="#accordion"
                             >
                               <li>
-                                <a href="/search/Forming a Partnership">
+                                {
+// eslint-disable-next-line 
+            }<a href="/search/Forming a Partnership">
                                   Forming a Partnership
                                 </a>
                               </li>
                               <li>
-                                <a href="/search/Forming a Sole Proprietorship">
+                                {
+// eslint-disable-next-line 
+            }<a href="/search/Forming a Sole Proprietorship">
                                   Forming a Sole Proprietorship
                                 </a>
                               </li>
                               <li>
-                                <a href="/search/Forming a Pte Ltd company">
+                                {
+// eslint-disable-next-line 
+            }<a href="/search/Forming a Pte Ltd company">
                                   Forming a Pte Ltd company
                                 </a>
                               </li>
@@ -346,17 +387,23 @@ const Wrapper = (props) => {
                               data-bs-parent="#accordion"
                             >
                               <li>
-                                <a href="/search/Getting Government Help">
+                                {
+// eslint-disable-next-line 
+            }<a href="/search/Getting Government Help">
                                   Getting Government Help
                                 </a>
                               </li>
                               <li>
-                                <a href="/search/Government Agencies">
+                                {
+// eslint-disable-next-line 
+            }<a href="/search/Government Agencies">
                                   Government Agencies
                                 </a>
                               </li>
                               <li>
-                                <a href="/search/Government Programs">
+                                {
+// eslint-disable-next-line 
+            }<a href="/search/Government Programs">
                                   Government Programs
                                 </a>
                               </li>
@@ -407,10 +454,14 @@ const Wrapper = (props) => {
                               data-bs-parent="#accordion"
                             >
                               <li>
-                                <a href="/search/Health">Health</a>
+                                {
+// eslint-disable-next-line 
+            }<a href="/search/Health">Health</a>
                               </li>
                               <li>
-                                <a href="/search/Hiring a Confounder">
+                                {
+// eslint-disable-next-line 
+            }<a href="/search/Hiring a Confounder">
                                   Hiring a Confounder
                                 </a>
                               </li>
@@ -459,7 +510,9 @@ const Wrapper = (props) => {
                               data-bs-parent="#accordion"
                             >
                               <li>
-                                <a href="/search/Intellectual Property Basics">
+                                {
+// eslint-disable-next-line 
+            }<a href="/search/Intellectual Property Basics">
                                   Intellectual Property Basics
                                 </a>
                               </li>
@@ -508,17 +561,23 @@ const Wrapper = (props) => {
                               data-bs-parent="#accordion"
                             >
                               <li>
-                                <a href="/search/Managing your Business">
+                                {
+// eslint-disable-next-line 
+            }<a href="/search/Managing your Business">
                                   Managing your Business
                                 </a>
                               </li>
                               <li>
-                                <a href="/search/IP collateralization">
+                                {
+// eslint-disable-next-line 
+            }<a href="/search/IP collateralization">
                                   IP collateralization
                                 </a>
                               </li>
                               <li>
-                                <a href="/search/Starting a Business">
+                                {
+// eslint-disable-next-line 
+            }<a href="/search/Starting a Business">
                                   Marketing your Business
                                 </a>
                               </li>
@@ -567,17 +626,23 @@ const Wrapper = (props) => {
                               data-bs-parent="#accordion"
                             >
                               <li>
-                                <a href="/search/Sole Proprietorships">
+                                {
+// eslint-disable-next-line 
+            }<a href="/search/Sole Proprietorships">
                                   Sole Proprietorships
                                 </a>
                               </li>
                               <li>
-                                <a href="/search/Starting a Business">
+                                {
+// eslint-disable-next-line 
+            }<a href="/search/Starting a Business">
                                   Starting a Business
                                 </a>
                               </li>
                               <li>
-                                <a href="/search/Starting a Pte Ltd company">
+                                {
+// eslint-disable-next-line 
+            }<a href="/search/Starting a Pte Ltd company">
                                   Starting a Pte Ltd company
                                 </a>
                               </li>
@@ -591,39 +656,61 @@ const Wrapper = (props) => {
               </ul>
             </div>
             <div className="socials-container  d-flex align-items-center gap-2 gap-lg-3 w-50 ">
-              <a
+              {
+// eslint-disable-next-line 
+            }<a
                 href="https://www.facebook.com/sharer/sharer.php?u=https://www.toppstation.com"
                 className="d-flex align-items-center justify-content-center"
               >
-                <img src="./images/facebook.svg" alt="Facebook" />
+                {
+                  // eslint-disable-next-line @next/next/no-img-element
+               }<img src="./images/facebook.svg" alt="Facebook" />
               </a>
-               <a
+              {
+// eslint-disable-next-line 
+            }<a
                 href="https://twitter.com/intent/tweet?url=https://www.toppstation.com&text=Join Toppstation today to have access to our latest tweets."
                 className="d-flex align-items-center justify-content-center"
               >
-                <img src="./images/twitter.svg" alt="Instagram" />
+                {
+                  // eslint-disable-next-line @next/next/no-img-element
+               }<img src="./images/twitter.svg" alt="Instagram" />
               </a>
-              <a
+              {
+// eslint-disable-next-line 
+            }<a
                 href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.toppstation.com&title=Kimbocorp - Toppstation&summary=Discover benefits of building a business from a pro-business environment, including how tax incentives, rule of law, connectivity to other markets, strategic location and skilled workforce benefit you regardless where you are.&source="
                 className="d-flex align-items-center justify-content-center"
               >
-                <img src="./images/linkedin.svg" alt="Twitter" />
+                {
+                  // eslint-disable-next-line @next/next/no-img-element
+               }<img src="./images/linkedin.svg" alt="Twitter" />
               </a>
-              <a
+              {
+// eslint-disable-next-line 
+            }<a
                 href="https://api.whatsapp.com/send?text=Join Toppstation today to have access to our latest news.%0ahttps://www.toppstation.com"
                 className="d-flex align-items-center justify-content-center"
               >
-                <img src="./images/whatsapp.svg" alt="Whatsapp" />
+                {
+                  // eslint-disable-next-line @next/next/no-img-element
+               }<img src="./images/whatsapp.svg" alt="Whatsapp" />
               </a>
-              <a
+              {
+// eslint-disable-next-line 
+            }<a
                 href="mailto:?&subject=Enabling Entrepreneurs worldwide&body=https://www.toppstation.com"
                 className="d-flex align-items-center justify-content-center"
               >
-                <img src="./images/gmail.svg" alt="Gmail" />
+                {
+                  // eslint-disable-next-line @next/next/no-img-element
+               }<img src="./images/gmail.svg" alt="Gmail" />
               </a>
             </div>
             <div className="header-chat-btn d-none d-md-block">
-              <a href="/about-us" title="">
+              {
+// eslint-disable-next-line 
+            }<a href="/about-us" title="">
                 Chat With Us
               </a>
             </div>
@@ -632,7 +719,9 @@ const Wrapper = (props) => {
       </header>
       {props.children}
       <footer className="footer-main footer">
-        <a href="#" title="" className="bottom-to-top-btn">
+        {
+// eslint-disable-next-line 
+            }<a href="#" title="" className="bottom-to-top-btn">
           <i className="fas fa-chevron-up"></i>
           <span>TOP</span>
         </a>
@@ -640,12 +729,16 @@ const Wrapper = (props) => {
           <>
             <div className="cookies__container container d-flex align-items-center justify-content-between gap-3 pt-5 pb-2 flex-column flex-sm-row">
               <button className="close--btn" onClick={closeCookies}>
-                <img src="./images/close.svg" alt="close button" />
+                {
+                  // eslint-disable-next-line @next/next/no-img-element
+               }<img src="./images/close.svg" alt="close button" />
               </button>
               <p className="cookies--text m-0">
                 By clicking accept cookies you agree to our use of cookies and
                 other tracking technologies in accordance with our
-                <a href="#" className="cookies--page">
+                {
+// eslint-disable-next-line 
+            }<a href="#" className="cookies--page">
                   &nbsp;Cookie Policy.
                 </a>
               </p>
@@ -662,29 +755,41 @@ const Wrapper = (props) => {
 
         <div className="container d-flex justify-content-between align-items-center flex-column flex-xl-row ">
           <figure>
-            <img src="./images/logo.svg" alt="logo" />
+            {
+              // eslint-disable-next-line @next/next/no-img-element
+            }<img src="./images/logo.svg" alt="logo" />
           </figure>
           <div className="footer--links d-flex gap-3 gap-md-5 flex-wrap">
-            <a className="link" href="./about-us">
+            {
+// eslint-disable-next-line 
+            }<a className="link" href="./about-us">
               About us
             </a>
-            <a className="link" href="./Affiliate">
+            {
+// eslint-disable-next-line 
+            }<a className="link" href="./Affiliate">
               Affiliates
             </a>
-            <a className="link" href="./JoinNetwork">
+            {
+// eslint-disable-next-line 
+            }<a className="link" href="./JoinNetwork">
               Join our Network
             </a>
-            <a className="link" href="./Contact">
+            {
+// eslint-disable-next-line 
+            }<a className="link" href="./Contact">
               Contact us
             </a>
-            <a className="link" href="./FAQ">
+            {
+// eslint-disable-next-line 
+            }<a className="link" href="./FAQ">
               FAQs
             </a>
           </div>
         </div>
       </footer>
     </>
-  );
-};
+  )
+}
 
-export default Wrapper;
+export default Wrapper
