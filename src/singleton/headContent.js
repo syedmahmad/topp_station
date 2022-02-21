@@ -24,7 +24,9 @@ function HeadContent({
 			<meta name="type" property="og:type" content="website" />
 			<meta name="title" property="og:title" content={title} />
 			<meta name="url" property="og:url" content={url + route} />
-			<meta name="image" property="og:image" content={"http://graphics8.nytimes.com/images/2012/02/19/us/19whitney-span/19whitney-span-articleLarge.jpg"} />
+			<meta property="og:image:width" content="1200" />
+			<meta property="og:image:height" content="630" />
+			<meta name="image" property="og:image" content={image_url} />
 			<meta name="description" property="og:description" content={description} />
 			<meta property="fb:app_id" content="1757891891170883" />
 
@@ -33,7 +35,7 @@ function HeadContent({
 			<meta name="twitter:card" content="summary" />
 			<meta name="twitter:site" content={url + route} />
 			<meta name="twitter:description" content={description} />
-			<meta name="twitter:image" content={"http://graphics8.nytimes.com/images/2012/02/19/us/19whitney-span/19whitney-span-articleLarge.jpg"} />
+			<meta name="twitter:image" content={image_url} />
 		</Head>
 	);
 }
