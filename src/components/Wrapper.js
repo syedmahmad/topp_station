@@ -767,22 +767,22 @@ const Wrapper = (props) => {
             </a>
             {
 // eslint-disable-next-line 
-            }<a className="link" href="./Affiliate">
+            }<a className="link" href="./affiliate">
               Affiliates
             </a>
             {
 // eslint-disable-next-line 
-            }<a className="link" href="./JoinNetwork">
+            }<a className="link" href="./join-network">
               Join our Network
             </a>
             {
 // eslint-disable-next-line 
-            }<a className="link" href="./Contact">
+            }<a className="link" href="./contact">
               Contact us
             </a>
             {
 // eslint-disable-next-line 
-            }<a className="link" href="./FAQ">
+            }<a className="link" href="./faq">
               FAQs
             </a>
           </div>

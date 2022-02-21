@@ -1,8 +1,5 @@
 import React, { useState, useContext, useEffect } from 'react'
-
-// import "../styling/style.module.css";
-// import "../styling/home.styles.module.scss";
-
+import axios from 'axios';
 import { BlogContext } from '../context/BlogState'
 
 const Home = (props) => {
@@ -34,8 +31,8 @@ const Home = (props) => {
       await axios
       .get('api/getblogs')
       .then((res) => {
-        setPosts(res)
-        createCategories(res)
+        setPosts(res?.data)
+        createCategories(res?.data)
       })
     })();
   }, [])
