@@ -1,13 +1,15 @@
-import React from "react";
+import React from 'react'
 
-import "../styling/style.css";
-import "../styling/home.styles.scss";
+import '../styling/style.css'
+import '../styling/home.styles.scss'
 
 const Home = (props) => {
   return (
     <>
-      <img
-        class="hero-bg position-absolute w-50"
+      {
+        // eslint-disable-next-line @next/next/no-img-element
+      }<img
+        className="hero-bg position-absolute w-50"
         src="./images/bg.svg"
         alt="background"
       />
@@ -18,17 +20,23 @@ const Home = (props) => {
               <div className="inner-text">
                 <h1 className="main-txt-heading position-relative">
                   Enabling Entrepreneurs worldwide
-                  <img
+                  {
+                    // eslint-disable-next-line @next/next/no-img-element
+                  }<img
                     className="star-bg position-absolute"
                     src="images/star.svg"
                     alt="star"
                   />
-                  <img
+                  {
+                    // eslint-disable-next-line @next/next/no-img-element
+                  }<img
                     className="star-bg-2 position-absolute"
                     src="images/star.svg"
                     alt="star"
                   />
-                  <img
+                  {
+                    // eslint-disable-next-line @next/next/no-img-element
+                  }<img
                     className="design"
                     src="images/design.png"
                     alt="heading background"
@@ -48,8 +56,10 @@ const Home = (props) => {
                     placeholder="search article"
                   />
                   <button type="submit" href="#">
-                    <img
-                      style={{ width: "23px" }}
+                    {
+                      // eslint-disable-next-line @next/next/no-img-element
+                    }<img
+                      style={{ width: '23px' }}
                       src="./images/search.svg"
                       alt="search"
                     />
@@ -58,7 +68,9 @@ const Home = (props) => {
               </div>
             </div>
             <div className="col-md-6">
-              <img src="images/home-hero.png" alt="" />
+              {
+                // eslint-disable-next-line @next/next/no-img-element
+              }<img src="images/home-hero.png" alt="" />
             </div>
           </div>
         </div>
@@ -67,7 +79,9 @@ const Home = (props) => {
       <section className="blog-card__container py-sm-5 bg-light-shade">
         <div className="container">
           <div className="title--wrapper d-flex align-items-center">
-            <img
+            {
+              // eslint-disable-next-line @next/next/no-img-element
+            }<img
               className="title-bg me-2"
               src="images/Rectangle.png"
               alt="heading-bg"
@@ -77,7 +91,9 @@ const Home = (props) => {
           <div className="row mt-4">
             <a href="#" className="col-md-4">
               <figure className="card-image">
-                <img src="./images/card-1.png" alt="card image" />
+                {
+                  // eslint-disable-next-line @next/next/no-img-element
+               }<img src="./images/card-1.png" alt="card image" />
               </figure>
               <a href="#" className="card-tag d-inline-block">
                 Logo Design
@@ -94,7 +110,9 @@ const Home = (props) => {
             </a>
             <a href="#" className="col-md-4">
               <figure className="card-image">
-                <img src="./images/card-3.png" alt="card image" />
+                {
+                  // eslint-disable-next-line @next/next/no-img-element
+               }<img src="./images/card-3.png" alt="card image" />
               </figure>
               <a href="#" className="card-tag d-inline-block">
                 Logo Design
@@ -111,7 +129,9 @@ const Home = (props) => {
             </a>
             <a href="#" className="col-md-4">
               <figure className="card-image">
-                <img src="./images/card-2.png" alt="card image" />
+                {
+                  // eslint-disable-next-line @next/next/no-img-element
+               }<img src="./images/card-2.png" alt="card image" />
               </figure>
               <a href="#" className="card-tag d-inline-block">
                 Logo Design
@@ -129,7 +149,7 @@ const Home = (props) => {
           </div>
           <a href="#" className="btn d-flex align-items-center gap-3 mt-5">
             See More Business Formation
-            <i class="far fa-arrow-right"></i>
+            <i className="far fa-arrow-right"></i>
           </a>
         </div>
       </section>
@@ -151,7 +171,9 @@ const Home = (props) => {
               </a>
             </div>
             <figure className="col-md-5">
-              <img src="./images/highlight.png" alt="highlighted image" />
+              {
+                // eslint-disable-next-line @next/next/no-img-element
+              }<img src="./images/highlight.png" alt="highlighted image" />
             </figure>
           </div>
         </div>
@@ -160,7 +182,9 @@ const Home = (props) => {
       <section className="blog-card__container py-5 bg-light-shade">
         <div className="container">
           <div className="title--wrapper d-flex">
-            <img
+            {
+              // eslint-disable-next-line @next/next/no-img-element
+            }<img
               className="title-bg me-2"
               src="images/Rectangle.png"
               alt="heading-bg"
@@ -170,7 +194,9 @@ const Home = (props) => {
           <div className="row row-gap mt-4">
             <div className="col-lg-4 col-md-6">
               <figure className="card-image">
-                <img src="./images/card-1.png" alt="card image" />
+                {
+                  // eslint-disable-next-line @next/next/no-img-element
+               }<img src="./images/card-1.png" alt="card image" />
               </figure>
               <a href="#" className="card-tag d-inline-block">
                 Logo Design
@@ -187,7 +213,9 @@ const Home = (props) => {
             </div>
             <div className="col-lg-4 col-md-6">
               <figure className="card-image">
-                <img src="./images/card-3.png" alt="card image" />
+                {
+                  // eslint-disable-next-line @next/next/no-img-element
+               }<img src="./images/card-3.png" alt="card image" />
               </figure>
               <a href="#" className="card-tag d-inline-block">
                 Logo Design
@@ -203,40 +231,42 @@ const Home = (props) => {
               </p>
             </div>
             <div className="col-lg-4 col-md-12 row gap-4 ms-lg-auto">
-              <div class="legal-question-outer col-md-5 col-lg-12">
-                <h5 class="legal-main-heading">Have legal question?</h5>
-                <p class="legal-main-p">
+              <div className="legal-question-outer col-md-5 col-lg-12">
+                <h5 className="legal-main-heading">Have legal question?</h5>
+                <p className="legal-main-p">
                   Get help from kimbocorp attorney when you need it.No expensive
                   hourly fee.No surprise pricing.
                 </p>
-                <a href="#" title="" class="legal-learn-more-btn">
+                <a href="#" title="" className="legal-learn-more-btn">
                   Learn more
                 </a>
-                <img
+                {
+                  // eslint-disable-next-line @next/next/no-img-element
+               }<img
                   src="images/Legal-background.png"
                   alt="Legal"
-                  class="legal-question-image"
+                  className="legal-question-image"
                 />
               </div>
-              <div class="tags-sec col-md-5 col-lg-12">
-                <h5 class="tags-sec-main-heading">Topics</h5>
-                <div class="row">
-                  <a href="#" class="tags-sec-btn" title="">
+              <div className="tags-sec col-md-5 col-lg-12">
+                <h5 className="tags-sec-main-heading">Topics</h5>
+                <div className="row">
+                  <a href="#" className="tags-sec-btn" title="">
                     NEW YEAR
                   </a>
-                  <a href="#" class="tags-sec-btn" title="">
+                  <a href="#" className="tags-sec-btn" title="">
                     RESOLUTION
                   </a>
-                  <a href="#" class="tags-sec-btn" title="">
+                  <a href="#" className="tags-sec-btn" title="">
                     HOLIDAY
                   </a>
-                  <a href="#" class="tags-sec-btn" title="">
+                  <a href="#" className="tags-sec-btn" title="">
                     MOTIVATION
                   </a>
-                  <a href="#" class="tags-sec-btn" title="">
+                  <a href="#" className="tags-sec-btn" title="">
                     DREAM
                   </a>
-                  <a href="#" class="tags-sec-btn" title="">
+                  <a href="#" className="tags-sec-btn" title="">
                     VACATION
                   </a>
                 </div>
@@ -245,7 +275,7 @@ const Home = (props) => {
           </div>
           <a href="#" className="btn d-flex align-items-center gap-3 mt-5">
             See More Business Management
-            <i class="far fa-arrow-right"></i>
+            <i className="far fa-arrow-right"></i>
           </a>
         </div>
         <div className="dotted-border container mt-5"></div>
@@ -254,7 +284,9 @@ const Home = (props) => {
       <section className="blog-card__container pb-5 bg-light-shade position-relative">
         <div className="container">
           <div className="title--wrapper d-flex">
-            <img
+            {
+              // eslint-disable-next-line @next/next/no-img-element
+            }<img
               className="title-bg me-2"
               src="images/Rectangle.png"
               alt="heading-bg"
@@ -264,7 +296,9 @@ const Home = (props) => {
           <div className="row mt-4">
             <div className="col-md-4">
               <figure className="card-image">
-                <img src="./images/card-1.png" alt="card image" />
+                {
+                  // eslint-disable-next-line @next/next/no-img-element
+               }<img src="./images/card-1.png" alt="card image" />
               </figure>
               <a href="#" className="card-tag d-inline-block">
                 Logo Design
@@ -281,7 +315,9 @@ const Home = (props) => {
             </div>
             <div className="col-md-4">
               <figure className="card-image">
-                <img src="./images/card-3.png" alt="card image" />
+                {
+                  // eslint-disable-next-line @next/next/no-img-element
+               }<img src="./images/card-3.png" alt="card image" />
               </figure>
               <a href="#" className="card-tag d-inline-block">
                 Logo Design
@@ -298,7 +334,9 @@ const Home = (props) => {
             </div>
             <div className="col-md-4">
               <figure className="card-image">
-                <img src="./images/card-2.png" alt="card image" />
+                {
+                  // eslint-disable-next-line @next/next/no-img-element
+               }<img src="./images/card-2.png" alt="card image" />
               </figure>
               <a href="#" className="card-tag d-inline-block">
                 Logo Design
@@ -316,10 +354,12 @@ const Home = (props) => {
           </div>
           <a href="#" className="btn d-flex align-items-center gap-3 mt-5">
             See More Trademarks
-            <i class="far fa-arrow-right"></i>
+            <i className="far fa-arrow-right"></i>
           </a>
         </div>
-        <img
+        {
+          // eslint-disable-next-line @next/next/no-img-element
+        }<img
           className="section-bg position-absolute d-none d-sm-block"
           src="./images/section-bg.png"
           alt="section background"
@@ -330,7 +370,9 @@ const Home = (props) => {
       <section className="blog-card__container pb-5 bg-light-shade position-relative">
         <div className="container">
           <div className="title--wrapper d-flex">
-            <img
+            {
+              // eslint-disable-next-line @next/next/no-img-element
+            }<img
               className="title-bg me-2"
               src="images/Rectangle.png"
               alt="heading-bg"
@@ -340,7 +382,9 @@ const Home = (props) => {
           <div className="row mt-4">
             <div className="col-md-4">
               <figure className="card-image">
-                <img src="./images/card-1.png" alt="card image" />
+                {
+                  // eslint-disable-next-line @next/next/no-img-element
+               }<img src="./images/card-1.png" alt="card image" />
               </figure>
               <a href="#" className="card-tag d-inline-block">
                 Logo Design
@@ -357,7 +401,9 @@ const Home = (props) => {
             </div>
             <div className="col-md-4">
               <figure className="card-image">
-                <img src="./images/card-3.png" alt="card image" />
+                {
+                  // eslint-disable-next-line @next/next/no-img-element
+               }<img src="./images/card-3.png" alt="card image" />
               </figure>
               <a href="#" className="card-tag d-inline-block">
                 Logo Design
@@ -374,7 +420,9 @@ const Home = (props) => {
             </div>
             <div className="col-md-4">
               <figure className="card-image">
-                <img src="./images/card-2.png" alt="card image" />
+                {
+                  // eslint-disable-next-line @next/next/no-img-element
+               }<img src="./images/card-2.png" alt="card image" />
               </figure>
               <a href="#" className="card-tag d-inline-block">
                 Logo Design
@@ -392,10 +440,12 @@ const Home = (props) => {
           </div>
           <a href="#" className="btn d-flex align-items-center gap-3 mt-5">
             See More Equal Rights
-            <i class="far fa-arrow-right"></i>
+            <i className="far fa-arrow-right"></i>
           </a>
         </div>
-        <img
+        {
+          // eslint-disable-next-line @next/next/no-img-element
+        }<img
           className="section-bg position-absolute d-none d-sm-block"
           src="./images/section-bg.png"
           alt="section background"
@@ -406,7 +456,9 @@ const Home = (props) => {
       <section className="blog-card__container pb-5 bg-light-shade">
         <div className="container">
           <div className="title--wrapper d-flex">
-            <img
+            {
+              // eslint-disable-next-line @next/next/no-img-element
+            }<img
               className="title-bg me-2"
               src="images/Rectangle.png"
               alt="heading-bg"
@@ -416,7 +468,9 @@ const Home = (props) => {
           <div className="row mt-4">
             <div className="col-md-4">
               <figure className="card-image">
-                <img src="./images/card-1.png" alt="card image" />
+                {
+                  // eslint-disable-next-line @next/next/no-img-element
+               }<img src="./images/card-1.png" alt="card image" />
               </figure>
               <a href="#" className="card-tag d-inline-block">
                 Logo Design
@@ -433,7 +487,9 @@ const Home = (props) => {
             </div>
             <div className="col-md-4">
               <figure className="card-image">
-                <img src="./images/card-3.png" alt="card image" />
+                {
+                  // eslint-disable-next-line @next/next/no-img-element
+               }<img src="./images/card-3.png" alt="card image" />
               </figure>
               <a href="#" className="card-tag d-inline-block">
                 Logo Design
@@ -450,7 +506,9 @@ const Home = (props) => {
             </div>
             <div className="col-md-4">
               <figure className="card-image">
-                <img src="./images/card-2.png" alt="card image" />
+                {
+                  // eslint-disable-next-line @next/next/no-img-element
+               }<img src="./images/card-2.png" alt="card image" />
               </figure>
               <a href="#" className="card-tag d-inline-block">
                 Logo Design
@@ -468,7 +526,7 @@ const Home = (props) => {
           </div>
           <a href="#" className="btn d-flex align-items-center gap-3 mt-5">
             See More Tips and Trends
-            <i class="far fa-arrow-right"></i>
+            <i className="far fa-arrow-right"></i>
           </a>
         </div>
       </section>
@@ -600,7 +658,7 @@ const Home = (props) => {
         </div>
       </section>
     </>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home

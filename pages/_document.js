@@ -15,7 +15,7 @@ class MyDocument extends Document {
 					<script defer={true} src="/swiper.min.js"></script>
 					<script defer={true} src="/script.js"></script>
 
-					<script src="/main.bundle.js"></script>
+					<script defer={true} src="/main.bundle.js"></script>
 				</Head>
 				<body>
 					<Main />

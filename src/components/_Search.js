@@ -4,63 +4,63 @@ import React, {
   useContext,
   useEffect,
   useCallback,
-} from "react";
-import { useRouteMatch, useHistory } from "react-router-dom";
+} from 'react'
+import { useRouteMatch, useHistory } from 'react-router-dom'
 
-import data from "../Data/data";
+import data from '../Data/data'
 
-import "../styling/search.css";
+import '../styling/search.css'
 
 const Search = (props) => {
-  const [searchData, setSearchData] = useState("");
+  const [searchData, setSearchData] = useState('')
 
-  let match = useRouteMatch("/search/:category");
+  let match = useRouteMatch('/search/:category')
 
-  useEffect(() => {
-    if (match.params && match.params.category) {
-      setSearchData(match.params.category);
-    }
-  }, [match.params.category]);
+  // useEffect(() => {
+  //   if (match.params && match.params.category) {
+  //     setSearchData(match.params.category)
+  //   }
+  // }, [match.params.category])
 
   // Filter posts
-  const [searchInput, setSearchInput] = useState("");
-  const [filteredResults, setFilteredResults] = useState([]);
+  const [searchInput, setSearchInput] = useState('')
+  const [filteredResults, setFilteredResults] = useState([])
 
   const searchItems = (searchValue) => {
-    setSearchInput(searchValue);
+    setSearchInput(searchValue)
 
-    if (searchInput !== "") {
+    if (searchInput !== '') {
       const filteredData = data.filter((item) => {
         return Object.values(item)
-          .join("")
+          .join('')
           .toLowerCase()
-          .includes(searchInput.toLowerCase());
-      });
-      setFilteredResults(filteredData);
-    } else setFilteredResults(data);
-  };
+          .includes(searchInput.toLowerCase())
+      })
+      setFilteredResults(filteredData)
+    } else setFilteredResults(data)
+  }
 
   // Sort posts
-  const [posts, setPosts] = useState(data);
-  const [sortBy, setSortBy] = useState("older");
+  const [posts, setPosts] = useState(data)
+  const [sortBy, setSortBy] = useState('older')
   /** */
   function reverseArr(input) {
-    let ret = new Array();
+    let ret = new Array()
     for (let i = input.length - 1; i >= 0; i--) {
-      ret.push(input[i]);
+      ret.push(input[i])
     }
-    return ret;
+    return ret
   }
   /**/
   const renderPosts = (event) => {
-    const value = event.target.value.toLowerCase();
-    if (sortBy === "older" && value === "older") {
+    const value = event.target.value.toLowerCase()
+    if (sortBy === 'older' && value === 'older') {
     } else {
-      setSortBy(value);
-      let newPosts = reverseArr(posts);
-      setPosts(newPosts);
+      setSortBy(value)
+      let newPosts = reverseArr(posts)
+      setPosts(newPosts)
     }
-  };
+  }
 
   return (
     <>
@@ -76,7 +76,7 @@ const Search = (props) => {
                 name="search"
                 placeholder="search article"
                 style={{
-                  boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px",
+                  boxShadow: 'rgba(100, 100, 111, 0.2) 0px 7px 29px 0px',
                 }}
                 onChange={(e) => searchItems(e.target.value)}
               />
@@ -95,7 +95,9 @@ const Search = (props) => {
             <div className="col-6 search__main-heading-wrapper">
               <h2 className="h1 search__main-heading">
                 Search Results
-                <img
+                {
+                  // eslint-disable-next-line @next/next/no-img-element
+               }<img
                   className="design"
                   src="images/brown-underline.png"
                   alt=""
@@ -135,7 +137,9 @@ const Search = (props) => {
                             <div className="col-md-4">
                               <div className="img-outer-tab-sec">
                                 <a href="#" title="">
-                                  <img src={blog.image} alt="" />
+                                  {
+                                    // eslint-disable-next-line @next/next/no-img-element
+                                  }<img src={blog.image} alt="" />
                                 </a>
                               </div>
                             </div>
@@ -152,7 +156,9 @@ const Search = (props) => {
                                     <a href="#">
                                       <span className="info-sec-main">
                                         <span className="icn-main">
-                                          <img
+                                          {
+                                            // eslint-disable-next-line @next/next/no-img-element
+                                         }<img
                                             src="images/clock.png"
                                             alt=""
                                             className="icn-image-clock-&-user"
@@ -166,7 +172,9 @@ const Search = (props) => {
                                     <a href="#">
                                       <span className="info-sec-main">
                                         <span className="icn-main">
-                                          <img
+                                          {
+                                            // eslint-disable-next-line @next/next/no-img-element
+                                         }<img
                                             src="images/user.png"
                                             alt=""
                                             className="icn-image-clock-&-user"
@@ -184,7 +192,7 @@ const Search = (props) => {
                             </div>
                           </div>
                         </div>
-                      );
+                      )
                     })
                   : posts.map((blog, index) => {
                       return (
@@ -196,7 +204,9 @@ const Search = (props) => {
                             <div className="col-md-4">
                               <div className="img-outer-tab-sec">
                                 <a href="#" title="">
-                                  <img src={blog.image} alt="" />
+                                  {
+                                    // eslint-disable-next-line @next/next/no-img-element
+                                  }<img src={blog.image} alt="" />
                                 </a>
                               </div>
                             </div>
@@ -213,7 +223,9 @@ const Search = (props) => {
                                     <a href="#">
                                       <span className="info-sec-main">
                                         <span className="icn-main">
-                                          <img
+                                          {
+                                            // eslint-disable-next-line @next/next/no-img-element
+                                         }<img
                                             src="images/clock.png"
                                             alt=""
                                             className="icn-image-clock-&-user"
@@ -227,7 +239,9 @@ const Search = (props) => {
                                     <a href="#">
                                       <span className="info-sec-main">
                                         <span className="icn-main">
-                                          <img
+                                          {
+                                            // eslint-disable-next-line @next/next/no-img-element
+                                         }<img
                                             src="images/user.png"
                                             alt=""
                                             className="icn-image-clock-&-user"
@@ -245,7 +259,7 @@ const Search = (props) => {
                             </div>
                           </div>
                         </div>
-                      );
+                      )
                     })}
               </div>
             </div>
@@ -253,7 +267,7 @@ const Search = (props) => {
         </div>
       </section>
     </>
-  );
-};
+  )
+}
 
-export default Search;
+export default Search

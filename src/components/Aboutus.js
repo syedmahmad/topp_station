@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 
 const Aboutus = (props) => {
   return (
@@ -10,23 +10,26 @@ const Aboutus = (props) => {
               <div className="col-md-6">
                 <div className="inner-text">
                   <h1 className="hd_clr position-relative">
-                    Hello, we’re kimbocorp
+                    Hello, we&apos;re kimbocorp
                   </h1>
                   <h6 className="about_sub_hd py-2">
-                    And we're here to democratize law.
+                    And we&apos;re here to democratize law.
                   </h6>
                   <p className="about_paragraph max-400">
-                    We're for the many. The many people determined to succeed,
-                    the goals that motivate them, the loved ones who inspire
-                    them.We're for technology that makes it easy, attorneys and
-                    tax experts who make it seem effortless, and trusted
-                    partners who make the next hurdle feel like less of a leap.
+                    We&apos;re for the many. The many people determined to
+                    succeed, the goals that motivate them, the loved ones who
+                    inspire them.We&apos;re for technology that makes it easy,
+                    attorneys and tax experts who make it seem effortless, and
+                    trusted partners who make the next hurdle feel like less of
+                    a leap.
                   </p>
                 </div>
               </div>
               <div className="col-md-5">
                 <div className="img-inner d-flex justify-content-end">
-                  <img src="images/About_top.png" alt="hero image" />
+                  {
+                    // eslint-disable-next-line @next/next/no-img-element
+                 }<img src="images/About_top.png" alt="hero image" />
                 </div>
               </div>
             </div>
@@ -76,8 +79,8 @@ const Aboutus = (props) => {
                     property protection.
                   </p>
                   <p className="about_paragraph">
-                    Soon, word began to spread: there's a new, easier, and less
-                    expensive way to get legal help.
+                    Soon, word began to spread: there&apos;s a new, easier, and
+                    less expensive way to get legal help.
                   </p>
                   <p className="about_paragraph">
                     In 2010, after a decade of growing our services, we
@@ -106,15 +109,17 @@ const Aboutus = (props) => {
                 <div className="guid_box about_box">
                   <div className="font_f d-flex justify-content-between align-items-center my-3">
                     <span className="color_1 p-2">
-                      <img src="images/first.png" />
+                      {
+                        // eslint-disable-next-line @next/next/no-img-element
+                      }<img alt="image" src="images/first.png" />
                     </span>
                     01
                   </div>
                   <h4 className="heading-4">People first</h4>
                   <p className="about_paragraph">
-                    We're all about people—both inside and outside the
-                    company—and we’re committed to their continued wellness and
-                    success.
+                    We&apos;re all about people—both inside and outside the
+                    company—and we&apos;re committed to their continued wellness
+                    and success.
                   </p>
                 </div>
               </div>
@@ -122,7 +127,9 @@ const Aboutus = (props) => {
                 <div className="guid_box about_box">
                   <div className="font_f d-flex justify-content-between align-items-center my-3">
                     <span className="color_2 p-2">
-                      <img src="images/second.png" />
+                      {
+                        // eslint-disable-next-line @next/next/no-img-element
+                      }<img alt="image" src="images/second.png" />
                     </span>
                     02
                   </div>
@@ -138,14 +145,16 @@ const Aboutus = (props) => {
                 <div className="guid_box about_box">
                   <div className="font_f d-flex justify-content-between align-items-center my-3">
                     <span className="color_3 p-2">
-                      <img src="images/thired.png" />
+                      {
+                        // eslint-disable-next-line @next/next/no-img-element
+                      }<img src="images/thired.png" alt="image"/>
                     </span>
                     03
                   </div>
                   <h4 className="heading-4">Purpose-driven</h4>
                   <p className="about_paragraph">
-                    We're united by our mission to democratize law, and we
-                    strive to improve people's lives in everything we do.
+                    We&apos;re united by our mission to democratize law, and we
+                    strive to improve people&apos;s lives in everything we do.
                   </p>
                 </div>
               </div>
@@ -153,15 +162,17 @@ const Aboutus = (props) => {
                 <div className="guid_box about_box">
                   <div className="font_f d-flex justify-content-between align-items-center my-3">
                     <span className="color_4 p-2">
-                      <img src="images/fourth.png" />
+                      {
+                        // eslint-disable-next-line @next/next/no-img-element
+                      }<img alt="image" src="images/fourth.png" />
                     </span>
                     04
                   </div>
                   <h4 className="heading-4">Simplicity</h4>
                   <p className="about_paragraph">
-                    This is a complex industry, and we've made it easier for
-                    customers and employees to get work done while facing fewer
-                    roadblocks.
+                    This is a complex industry, and we&apos;ve made it easier
+                    for customers and employees to get work done while facing
+                    fewer roadblocks.
                   </p>
                 </div>
               </div>
@@ -172,7 +183,7 @@ const Aboutus = (props) => {
           <div className="container">
             <h2 className="heading-2 text-center mb-4">Meet our team</h2>
             <p
-              style={{ color: "#5B5B5B" }}
+              style={{ color: '#5B5B5B' }}
               className="about_paragraph text-center max-700"
             >
               We knew there were still other ways we could help small
@@ -186,7 +197,9 @@ const Aboutus = (props) => {
                 <div className="swiper-wrapper">
                   <div className="swiper-slide">
                     <div className="about_team p-4 bg-light text-center">
-                      <img className="client_img" src="images/dev-2.png" />
+                      {
+                        // eslint-disable-next-line @next/next/no-img-element
+                      }<img alt="image" className="client_img" src="images/dev-2.png" />
                       <a href="" className="red_btn my-3">
                         <strong>Alexnder</strong>
                         <br />
@@ -194,13 +207,19 @@ const Aboutus = (props) => {
                       </a>
                       <ul className="about_social my-2">
                         <li>
-                          <img src="images/facebook.png" />
+                          {
+                            // eslint-disable-next-line @next/next/no-img-element
+                          }<img alt="image" src="images/facebook.png" />
                         </li>
                         <li>
-                          <img src="images/instagram.png" />
+                          {
+                            // eslint-disable-next-line @next/next/no-img-element
+                          }<img alt="image" src="images/instagram.png" />
                         </li>
                         <li>
-                          <img src="images/twitter.png" />
+                          {
+                            // eslint-disable-next-line @next/next/no-img-element
+                          }<img alt="image" src="images/twitter.png" />
                         </li>
                       </ul>
                       <p className="about_paragraph text-center">
@@ -212,7 +231,9 @@ const Aboutus = (props) => {
                   </div>
                   <div className="swiper-slide">
                     <div className="about_team p-4 bg-light text-center">
-                      <img className="client_img" src="images/Client-1.png" />
+                      {
+                        // eslint-disable-next-line @next/next/no-img-element
+                      }<img alt="image" className="client_img" src="images/Client-1.png" />
                       <a href="" className="red_btn my-3">
                         <strong>Alexnder</strong>
                         <br />
@@ -220,13 +241,19 @@ const Aboutus = (props) => {
                       </a>
                       <ul className="about_social my-2">
                         <li>
-                          <img src="images/facebook.png" />
+                          {
+                            // eslint-disable-next-line @next/next/no-img-element
+                          }<img alt="image" src="images/facebook.png" />
                         </li>
                         <li>
-                          <img src="images/instagram.png" />
+                          {
+                            // eslint-disable-next-line @next/next/no-img-element
+                          }<img alt="image" src="images/instagram.png" />
                         </li>
                         <li>
-                          <img src="images/twitter.png" />
+                          {
+                            // eslint-disable-next-line @next/next/no-img-element
+                          }<img alt="image" src="images/twitter.png" />
                         </li>
                       </ul>
                       <p className="about_paragraph text-center">
@@ -238,7 +265,9 @@ const Aboutus = (props) => {
                   </div>
                   <div className="swiper-slide">
                     <div className="about_team p-4 bg-light text-center">
-                      <img className="client_img" src="images/dev-1.png" />
+                      {
+                        // eslint-disable-next-line @next/next/no-img-element
+                      }<img alt="image" className="client_img" src="images/dev-1.png" />
                       <a href="" className="red_btn my-3">
                         <strong>Alexnder</strong>
                         <br />
@@ -246,13 +275,19 @@ const Aboutus = (props) => {
                       </a>
                       <ul className="about_social my-2">
                         <li>
-                          <img src="images/facebook.png" />
+                          {
+                            // eslint-disable-next-line @next/next/no-img-element
+                          }<img alt="image" src="images/facebook.png" />
                         </li>
                         <li>
-                          <img src="images/instagram.png" />
+                          {
+                            // eslint-disable-next-line @next/next/no-img-element
+                          }<img alt="image" src="images/instagram.png" />
                         </li>
                         <li>
-                          <img src="images/twitter.png" />
+                          {
+                            // eslint-disable-next-line @next/next/no-img-element
+                          }<img alt="image" src="images/twitter.png" />
                         </li>
                       </ul>
                       <p className="about_paragraph text-center">
@@ -269,7 +304,7 @@ const Aboutus = (props) => {
         </div>
       </main>
     </div>
-  );
-};
+  )
+}
 
-export default Aboutus;
+export default Aboutus
