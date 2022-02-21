@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 const BusinessFormation = (props) => {
   return (
@@ -12,9 +12,7 @@ const BusinessFormation = (props) => {
               </div>
             </div>
             <div className="col-md-6 col-sm-12">
-              {
-                // eslint-disable-next-line @next/next/no-img-element
-              }<img
+              <img
                 src="./images/contact-us-hero.jpg"
                 className="hero-img"
                 alt="Contact us"
@@ -118,7 +116,7 @@ const BusinessFormation = (props) => {
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                   >
-                    <g path="url(#clip0_0_501)">
+                    <g clip-path="url(#clip0_0_501)">
                       <path
                         d="M63.4047 0.5H4.21826V88.6638H63.4047V0.5Z"
                         fill="#64798A"
@@ -739,7 +737,7 @@ const BusinessFormation = (props) => {
         </div>
       </main>
     </>
-  )
-}
+  );
+};
 
-export default BusinessFormation
+export default BusinessFormation;
