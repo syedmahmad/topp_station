@@ -24,8 +24,8 @@ function HeadContent({
 			<meta name="type" property="og:type" content="website" />
 			<meta name="title" property="og:title" content={title} />
 			<meta name="url" property="og:url" content={url + route} />
-			<meta property="og:image:width" content="1200" />
-			<meta property="og:image:height" content="630" />
+			<meta property="og:image:width" content="600" />
+			<meta property="og:image:height" content="400" />
 			<meta name="image" property="og:image" content={image_url} />
 			<meta name="description" property="og:description" content={description} />
 			<meta property="fb:app_id" content="1757891891170883" />
