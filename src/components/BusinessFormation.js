@@ -403,7 +403,7 @@ const BusinessFormation = (props) => {
                 {
                   // eslint-disable-next-line @next/next/no-img-element
                }<img
-                  src="images/Legal-background.png"
+                  src="/images/Legal-background.png"
                   alt="Legal"
                   className="legal-question-image"
                 />
@@ -442,7 +442,7 @@ const BusinessFormation = (props) => {
                         // eslint-disable-next-line @next/next/no-img-element
                       }<img
                         className="popular-post-img"
-                        src="images/popular-post-img-one.jpg"
+                        src="/images/popular-post-img-one.jpg"
                         alt=""
                       />
                     </a>
@@ -462,7 +462,7 @@ const BusinessFormation = (props) => {
                         // eslint-disable-next-line @next/next/no-img-element
                       }<img
                         className="popular-post-img"
-                        src="images/popular-post-img-two.jpg"
+                        src="/images/popular-post-img-two.jpg"
                         alt=""
                       />
                     </a>
@@ -482,7 +482,7 @@ const BusinessFormation = (props) => {
                         // eslint-disable-next-line @next/next/no-img-element
                       }<img
                         className="popular-post-img"
-                        src="images/popular-post-img-three.jpg"
+                        src="/images/popular-post-img-three.jpg"
                         alt=""
                       />
                     </a>
@@ -502,7 +502,7 @@ const BusinessFormation = (props) => {
                         // eslint-disable-next-line @next/next/no-img-element
                       }<img
                         className="popular-post-img"
-                        src="images/popular-post-img-three.jpg"
+                        src="/images/popular-post-img-three.jpg"
                         alt=""
                       />
                     </a>
@@ -521,7 +521,7 @@ const BusinessFormation = (props) => {
                     // eslint-disable-next-line @next/next/no-img-element
                  }<img
                     className="popular-post-img Video-thumnail"
-                    src="images/Video-thumnail-img.jpg"
+                    src="/images/Video-thumnail-img.jpg"
                     alt=""
                   />
                 </a>

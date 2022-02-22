@@ -29,7 +29,7 @@ const Aboutus = (props) => {
                 <div className="img-inner d-flex justify-content-end">
                   {
                     // eslint-disable-next-line @next/next/no-img-element
-                 }<img src="images/About_top.png" alt="hero image" />
+                 }<img src="/images/About_top.png" alt="hero image" />
                 </div>
               </div>
             </div>
@@ -111,7 +111,7 @@ const Aboutus = (props) => {
                     <span className="color_1 p-2">
                       {
                         // eslint-disable-next-line @next/next/no-img-element
-                      }<img alt="image" src="images/first.png" />
+                      }<img alt="image" src="/images/first.png" />
                     </span>
                     01
                   </div>
@@ -129,7 +129,7 @@ const Aboutus = (props) => {
                     <span className="color_2 p-2">
                       {
                         // eslint-disable-next-line @next/next/no-img-element
-                      }<img alt="image" src="images/second.png" />
+                      }<img alt="image" src="/images/second.png" />
                     </span>
                     02
                   </div>
@@ -147,7 +147,7 @@ const Aboutus = (props) => {
                     <span className="color_3 p-2">
                       {
                         // eslint-disable-next-line @next/next/no-img-element
-                      }<img src="images/thired.png" alt="image"/>
+                      }<img src="/images/thired.png" alt="image"/>
                     </span>
                     03
                   </div>
@@ -164,7 +164,7 @@ const Aboutus = (props) => {
                     <span className="color_4 p-2">
                       {
                         // eslint-disable-next-line @next/next/no-img-element
-                      }<img alt="image" src="images/fourth.png" />
+                      }<img alt="image" src="/images/fourth.png" />
                     </span>
                     04
                   </div>
@@ -199,7 +199,7 @@ const Aboutus = (props) => {
                     <div className="about_team p-4 bg-light text-center">
                       {
                         // eslint-disable-next-line @next/next/no-img-element
-                      }<img alt="image" className="client_img" src="images/dev-2.png" />
+                      }<img alt="image" className="client_img" src="/images/dev-2.png" />
                       <a href="" className="red_btn my-3">
                         <strong>Alexnder</strong>
                         <br />
@@ -209,17 +209,17 @@ const Aboutus = (props) => {
                         <li>
                           {
                             // eslint-disable-next-line @next/next/no-img-element
-                          }<img alt="image" src="images/facebook.png" />
+                          }<img alt="image" src="/images/facebook.png" />
                         </li>
                         <li>
                           {
                             // eslint-disable-next-line @next/next/no-img-element
-                          }<img alt="image" src="images/instagram.png" />
+                          }<img alt="image" src="/images/instagram.png" />
                         </li>
                         <li>
                           {
                             // eslint-disable-next-line @next/next/no-img-element
-                          }<img alt="image" src="images/twitter.png" />
+                          }<img alt="image" src="/images/twitter.png" />
                         </li>
                       </ul>
                       <p className="about_paragraph text-center">
@@ -233,7 +233,7 @@ const Aboutus = (props) => {
                     <div className="about_team p-4 bg-light text-center">
                       {
                         // eslint-disable-next-line @next/next/no-img-element
-                      }<img alt="image" className="client_img" src="images/Client-1.png" />
+                      }<img alt="image" className="client_img" src="/images/Client-1.png" />
                       <a href="" className="red_btn my-3">
                         <strong>Alexnder</strong>
                         <br />
@@ -243,17 +243,17 @@ const Aboutus = (props) => {
                         <li>
                           {
                             // eslint-disable-next-line @next/next/no-img-element
-                          }<img alt="image" src="images/facebook.png" />
+                          }<img alt="image" src="/images/facebook.png" />
                         </li>
                         <li>
                           {
                             // eslint-disable-next-line @next/next/no-img-element
-                          }<img alt="image" src="images/instagram.png" />
+                          }<img alt="image" src="/images/instagram.png" />
                         </li>
                         <li>
                           {
                             // eslint-disable-next-line @next/next/no-img-element
-                          }<img alt="image" src="images/twitter.png" />
+                          }<img alt="image" src="/images/twitter.png" />
                         </li>
                       </ul>
                       <p className="about_paragraph text-center">
@@ -267,7 +267,7 @@ const Aboutus = (props) => {
                     <div className="about_team p-4 bg-light text-center">
                       {
                         // eslint-disable-next-line @next/next/no-img-element
-                      }<img alt="image" className="client_img" src="images/dev-1.png" />
+                      }<img alt="image" className="client_img" src="/images/dev-1.png" />
                       <a href="" className="red_btn my-3">
                         <strong>Alexnder</strong>
                         <br />
@@ -277,17 +277,17 @@ const Aboutus = (props) => {
                         <li>
                           {
                             // eslint-disable-next-line @next/next/no-img-element
-                          }<img alt="image" src="images/facebook.png" />
+                          }<img alt="image" src="/images/facebook.png" />
                         </li>
                         <li>
                           {
                             // eslint-disable-next-line @next/next/no-img-element
-                          }<img alt="image" src="images/instagram.png" />
+                          }<img alt="image" src="/images/instagram.png" />
                         </li>
                         <li>
                           {
                             // eslint-disable-next-line @next/next/no-img-element
-                          }<img alt="image" src="images/twitter.png" />
+                          }<img alt="image" src="/images/twitter.png" />
                         </li>
                       </ul>
                       <p className="about_paragraph text-center">

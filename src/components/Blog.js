@@ -91,7 +91,7 @@ const Blog = (props) => {
                 {
                   // eslint-disable-next-line @next/next/no-img-element
                }<img
-                  src="images/person.svg"
+                  src="/images/person.svg"
                   alt="Blog Writer Image"
                   className="img-fluid user-thumbnail"
                   width="40"
@@ -182,7 +182,7 @@ const Blog = (props) => {
               <div className="col-md-3 text-center">
                 {
                   // eslint-disable-next-line @next/next/no-img-element
-               }<img src="images/person.svg" alt="User" className="img-fluid" />
+               }<img src="/images/person.svg" alt="User" className="img-fluid" />
               </div>
               <div className="col-md-9 text-center text-md-start">
                 <h3 className="h3 text-white">{blog.creator}</h3>

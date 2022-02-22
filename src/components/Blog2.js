@@ -10,7 +10,7 @@ const Blog2 = (props) => {
               {
                 // eslint-disable-next-line @next/next/no-img-element
               }<img
-                src="images/blog-image.png"
+                src="/images/blog-image.png"
                 alt="Blog Image"
                 className="img-fluid"
               />
@@ -32,7 +32,7 @@ const Blog2 = (props) => {
                 >
                   {
                     // eslint-disable-next-line @next/next/no-img-element
-                  }<img src="images/facebook.png" alt="Facebook" />
+                  }<img src="/images/facebook.png" alt="Facebook" />
                 </a>
                 <a
                   href="#"
@@ -40,7 +40,7 @@ const Blog2 = (props) => {
                 >
                   {
                     // eslint-disable-next-line @next/next/no-img-element
-                  }<img src="images/twitter.png" alt="Twitter" />
+                  }<img src="/images/twitter.png" alt="Twitter" />
                 </a>
                 <a
                   href="#"
@@ -48,7 +48,7 @@ const Blog2 = (props) => {
                 >
                   {
                     // eslint-disable-next-line @next/next/no-img-element
-                  }<img src="images/instagram.png" alt="Instagram" />
+                  }<img src="/images/instagram.png" alt="Instagram" />
                 </a>
                 <a
                   href="#"
@@ -56,7 +56,7 @@ const Blog2 = (props) => {
                 >
                   {
                     // eslint-disable-next-line @next/next/no-img-element
-                  }<img src="images/youtube.png" alt="Youtube" />
+                  }<img src="/images/youtube.png" alt="Youtube" />
                 </a>
               </div>
             </div>
@@ -137,7 +137,7 @@ const Blog2 = (props) => {
             <div className="tip-head d-flex align-items-center gap-2 my-2">
               {
                 // eslint-disable-next-line @next/next/no-img-element
-              }<img src="images/right-side-hand.png" alt="Right" />
+              }<img src="/images/right-side-hand.png" alt="Right" />
               <h3 className="h3 mb-0 text-white">Tip</h3>
             </div>
             <div className="tip-body">
@@ -201,7 +201,7 @@ const Blog2 = (props) => {
               {
                 // eslint-disable-next-line @next/next/no-img-element
               }<img
-                src="images/might-like-1.png"
+                src="/images/might-like-1.png"
                 className="card-img-top"
                 alt="..."
               />
@@ -224,7 +224,7 @@ const Blog2 = (props) => {
               {
                 // eslint-disable-next-line @next/next/no-img-element
               }<img
-                src="images/might-like-2.png"
+                src="/images/might-like-2.png"
                 className="card-img-top"
                 alt="..."
               />
@@ -245,7 +245,7 @@ const Blog2 = (props) => {
               {
                 // eslint-disable-next-line @next/next/no-img-element
               }<img
-                src="images/might-like-3.png"
+                src="/images/might-like-3.png"
                 className="card-img-top"
                 alt="..."
               />

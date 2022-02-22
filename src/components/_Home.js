@@ -24,21 +24,21 @@ const Home = (props) => {
                     // eslint-disable-next-line @next/next/no-img-element
                   }<img
                     className="star-bg position-absolute"
-                    src="images/star.svg"
+                    src="/images/star.svg"
                     alt="star"
                   />
                   {
                     // eslint-disable-next-line @next/next/no-img-element
                   }<img
                     className="star-bg-2 position-absolute"
-                    src="images/star.svg"
+                    src="/images/star.svg"
                     alt="star"
                   />
                   {
                     // eslint-disable-next-line @next/next/no-img-element
                   }<img
                     className="design"
-                    src="images/design.png"
+                    src="/images/design.png"
                     alt="heading background"
                   />
                 </h1>
@@ -70,7 +70,7 @@ const Home = (props) => {
             <div className="col-md-6">
               {
                 // eslint-disable-next-line @next/next/no-img-element
-              }<img src="images/home-hero.png" alt="" />
+              }<img src="/images/home-hero.png" alt="" />
             </div>
           </div>
         </div>
@@ -83,7 +83,7 @@ const Home = (props) => {
               // eslint-disable-next-line @next/next/no-img-element
             }<img
               className="title-bg me-2"
-              src="images/Rectangle.png"
+              src="/images/Rectangle.png"
               alt="heading-bg"
             />
             <h2 className="heading-2">Business Formation</h2>
@@ -186,7 +186,7 @@ const Home = (props) => {
               // eslint-disable-next-line @next/next/no-img-element
             }<img
               className="title-bg me-2"
-              src="images/Rectangle.png"
+              src="/images/Rectangle.png"
               alt="heading-bg"
             />
             <h2 className="heading-2">Business Management</h2>
@@ -243,7 +243,7 @@ const Home = (props) => {
                 {
                   // eslint-disable-next-line @next/next/no-img-element
                }<img
-                  src="images/Legal-background.png"
+                  src="/images/Legal-background.png"
                   alt="Legal"
                   className="legal-question-image"
                 />
@@ -288,7 +288,7 @@ const Home = (props) => {
               // eslint-disable-next-line @next/next/no-img-element
             }<img
               className="title-bg me-2"
-              src="images/Rectangle.png"
+              src="/images/Rectangle.png"
               alt="heading-bg"
             />
             <h2 className="heading-2">Trademarks</h2>
@@ -374,7 +374,7 @@ const Home = (props) => {
               // eslint-disable-next-line @next/next/no-img-element
             }<img
               className="title-bg me-2"
-              src="images/Rectangle.png"
+              src="/images/Rectangle.png"
               alt="heading-bg"
             />
             <h2 className="heading-2">Equal Rights</h2>
@@ -460,7 +460,7 @@ const Home = (props) => {
               // eslint-disable-next-line @next/next/no-img-element
             }<img
               className="title-bg me-2"
-              src="images/Rectangle.png"
+              src="/images/Rectangle.png"
               alt="heading-bg"
             />
             <h2 className="heading-2">Tips and Trends</h2>

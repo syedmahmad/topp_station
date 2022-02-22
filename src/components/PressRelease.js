@@ -145,7 +145,7 @@ const PressRelease = (props) => {
                       Read More
                       {
                         // eslint-disable-next-line @next/next/no-img-element
-                      }<img alt="Image" src="images/Icon.png" />
+                      }<img alt="Image" src="/images/Icon.png" />
                     </a>
                   </div>
                 </div>
@@ -164,7 +164,7 @@ const PressRelease = (props) => {
                       Read More
                       {
                         // eslint-disable-next-line @next/next/no-img-element
-                      }{' '}<img alt="Image" src="images/Icon.png" />
+                      }{' '}<img alt="Image" src="/images/Icon.png" />
                     </a>
                   </div>
                 </div>
@@ -183,7 +183,7 @@ const PressRelease = (props) => {
                       Read More
                       {
                         // eslint-disable-next-line @next/next/no-img-element
-                      }<img alt="Image" src="images/Icon.png" />
+                      }<img alt="Image" src="/images/Icon.png" />
                     </a>
                   </div>
                 </div>
@@ -202,7 +202,7 @@ const PressRelease = (props) => {
                       Read More
                       {
                         // eslint-disable-next-line @next/next/no-img-element
-                      }<img alt="Image" src="images/Icon.png" />
+                      }<img alt="Image" src="/images/Icon.png" />
                     </a>
                   </div>
                 </div>
@@ -221,7 +221,7 @@ const PressRelease = (props) => {
                       Read More
                       {
                         // eslint-disable-next-line @next/next/no-img-element
-                      }<img alt="Image" src="images/Icon.png" />
+                      }<img alt="Image" src="/images/Icon.png" />
                     </a>
                   </div>
                 </div>
@@ -240,7 +240,7 @@ const PressRelease = (props) => {
                       Read More
                       {
                         // eslint-disable-next-line @next/next/no-img-element
-                      }<img alt="Image" src="images/Icon.png" />
+                      }<img alt="Image" src="/images/Icon.png" />
                     </a>
                   </div>
                 </div>
@@ -259,7 +259,7 @@ const PressRelease = (props) => {
                       Read More
                       {
                         // eslint-disable-next-line @next/next/no-img-element
-                      }<img alt="Image" src="images/Icon.png" />
+                      }<img alt="Image" src="/images/Icon.png" />
                     </a>
                   </div>
                 </div>
@@ -278,7 +278,7 @@ const PressRelease = (props) => {
                       Read More
                       {
                         // eslint-disable-next-line @next/next/no-img-element
-                      }<img alt="Image" src="images/Icon.png" />
+                      }<img alt="Image" src="/images/Icon.png" />
                     </a>
                   </div>
                 </div>
@@ -297,7 +297,7 @@ const PressRelease = (props) => {
                       Read More
                       {
                         // eslint-disable-next-line @next/next/no-img-element
-                      }<img alt="Image" src="images/Icon.png" />
+                      }<img alt="Image" src="/images/Icon.png" />
                     </a>
                   </div>
                 </div>

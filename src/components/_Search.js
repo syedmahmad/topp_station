@@ -99,7 +99,7 @@ const Search = (props) => {
                   // eslint-disable-next-line @next/next/no-img-element
                }<img
                   className="design"
-                  src="images/brown-underline.png"
+                  src="/images/brown-underline.png"
                   alt=""
                 />
               </h2>
@@ -159,7 +159,7 @@ const Search = (props) => {
                                           {
                                             // eslint-disable-next-line @next/next/no-img-element
                                          }<img
-                                            src="images/clock.png"
+                                            src="/images/clock.png"
                                             alt=""
                                             className="icn-image-clock-&-user"
                                           />
@@ -175,7 +175,7 @@ const Search = (props) => {
                                           {
                                             // eslint-disable-next-line @next/next/no-img-element
                                          }<img
-                                            src="images/user.png"
+                                            src="/images/user.png"
                                             alt=""
                                             className="icn-image-clock-&-user"
                                           />
@@ -226,7 +226,7 @@ const Search = (props) => {
                                           {
                                             // eslint-disable-next-line @next/next/no-img-element
                                          }<img
-                                            src="images/clock.png"
+                                            src="/images/clock.png"
                                             alt=""
                                             className="icn-image-clock-&-user"
                                           />
@@ -242,7 +242,7 @@ const Search = (props) => {
                                           {
                                             // eslint-disable-next-line @next/next/no-img-element
                                          }<img
-                                            src="images/user.png"
+                                            src="/images/user.png"
                                             alt=""
                                             className="icn-image-clock-&-user"
                                           />

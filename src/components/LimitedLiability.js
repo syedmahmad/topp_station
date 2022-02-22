@@ -571,20 +571,20 @@ const LimitedLiability = (props) => {
                 <figure className="image-container d-flex align-items-center gap-1">
                   {
                     // eslint-disable-next-line @next/next/no-img-element
-                 }<img src="images/star.png" alt="star" className="img-fluid" />
+                 }<img src="/images/star.png" alt="star" className="img-fluid" />
                   {
                     // eslint-disable-next-line @next/next/no-img-element
-                 }<img src="images/star.png" alt="star" className="img-fluid" />
+                 }<img src="/images/star.png" alt="star" className="img-fluid" />
                   {
                     // eslint-disable-next-line @next/next/no-img-element
-                 }<img src="images/star.png" alt="star" className="img-fluid" />
+                 }<img src="/images/star.png" alt="star" className="img-fluid" />
                   {
                     // eslint-disable-next-line @next/next/no-img-element
-                 }<img src="images/star.png" alt="star" className="img-fluid" />
+                 }<img src="/images/star.png" alt="star" className="img-fluid" />
                   {
                     // eslint-disable-next-line @next/next/no-img-element
                  }<img
-                    src="images/empty-star.png"
+                    src="/images/empty-star.png"
                     alt="star"
                     className="img-fluid"
                   />
@@ -595,7 +595,7 @@ const LimitedLiability = (props) => {
                 <figure className="image-container">
                   {
                     // eslint-disable-next-line @next/next/no-img-element
-                 }<img src="images/star.png" alt="star" className="img-fluid" />
+                 }<img src="/images/star.png" alt="star" className="img-fluid" />
                 </figure>
                 <div className="text">Trust Pilot</div>
               </div>

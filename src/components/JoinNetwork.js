@@ -9,7 +9,7 @@ const JoinNetwork = (props) => {
             {
               // eslint-disable-next-line @next/next/no-img-element
             }<img
-              src="images/network-banner-image.png"
+              src="/images/network-banner-image.png"
               alt="Network Banner Image"
               className="network__banner-image"
             />
@@ -26,7 +26,7 @@ const JoinNetwork = (props) => {
             <div className="col-1 col-md-1 p-0 text-end guidance-rectangle__image-wrapper">
               {
                 // eslint-disable-next-line @next/next/no-img-element
-              }<img src="images/Rectangle.png" alt="Rectangle" />
+              }<img src="/images/Rectangle.png" alt="Rectangle" />
             </div>
             <div className="col-11 col-md-6">
               <h1 className="h1">
@@ -49,7 +49,7 @@ const JoinNetwork = (props) => {
               <figure className="guidance__image-wrapper">
                 {
                   // eslint-disable-next-line @next/next/no-img-element
-               }<img src="images/guidance-1.jpg" alt="guidance" />
+               }<img src="/images/guidance-1.jpg" alt="guidance" />
               </figure>
             </div>
           </div>
@@ -58,13 +58,13 @@ const JoinNetwork = (props) => {
               <figure className="guidance__image-wrapper">
                 {
                   // eslint-disable-next-line @next/next/no-img-element
-               }<img src="images/guidance-2.png" alt="guidance" />
+               }<img src="/images/guidance-2.png" alt="guidance" />
               </figure>
             </div>
             <div className="col-1 col-md-1 p-0 text-end guidance-rectangle__image-wrapper">
               {
                 // eslint-disable-next-line @next/next/no-img-element
-              }<img src="images/Rectangle.png" alt="Rectangle" />
+              }<img src="/images/Rectangle.png" alt="Rectangle" />
             </div>
             <div className="col-11 col-md-6">
               <h1 className="h1 mb-4">How we help grow your practice</h1>
