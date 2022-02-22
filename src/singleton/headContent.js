@@ -24,7 +24,7 @@ function HeadContent({
 			<meta name="type" property="og:type" content="website" />
 			<meta name="title" property="og:title" content={title} />
 			<meta name="url" property="og:url" content={url + route} />
-			<meta name="image" property="og:image" content={"/images/logo.svg"} />
+			<meta name="image" property="og:image" content={"/images/social.png"} />
 			<meta name="description" property="og:description" content={description} />
 			<meta property="fb:app_id" content="1757891891170883" />
 
@@ -33,7 +33,7 @@ function HeadContent({
 			<meta name="twitter:card" content="summary" />
 			<meta name="twitter:site" content={url + route} />
 			<meta name="twitter:description" content={description} />
-			<meta name="twitter:image" content={"/images/logo.svg"} />
+			<meta name="twitter:image" content={"/images/social.png"} />
 		</Head>
 	);
 }
