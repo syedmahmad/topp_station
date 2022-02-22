@@ -116,7 +116,7 @@ const Blog = (props) => {
                 >
                   {
                     // eslint-disable-next-line @next/next/no-img-element
-                 }<img src="./images/facebook.svg" alt="Facebook" />
+                 }<img src="/images/facebook.svg" alt="Facebook" />
                 </a>
                 <a
                   href={`https://twitter.com/intent/tweet?url=https%3A%2F%2Ftoppstation.com%2Fblog%2F${blog._id}&text=${blog.title}`}
@@ -124,7 +124,7 @@ const Blog = (props) => {
                 >
                   {
                     // eslint-disable-next-line @next/next/no-img-element
-                 }<img src="./images/twitter.svg" alt="Twitter" />
+                 }<img src="/images/twitter.svg" alt="Twitter" />
                 </a>
                 <a
                   href={`http://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Ftoppstation.com%2Fblog%2F${blog._id}&text=${blog.title}`}
@@ -132,7 +132,7 @@ const Blog = (props) => {
                 >
                   {
                     // eslint-disable-next-line @next/next/no-img-element
-                 }<img src="./images/linkedin.svg" alt="Linkedin" />
+                 }<img src="/images/linkedin.svg" alt="Linkedin" />
                 </a>
                 <a
                   href={`https://api.whatsapp.com/send?text=${blog.title}%0ahttps%3A%2F%2Ftoppstation.com%2Fblog%2F${blog._id}`}
@@ -140,7 +140,7 @@ const Blog = (props) => {
                 >
                   {
                     // eslint-disable-next-line @next/next/no-img-element
-                 }<img src="./images/whatsapp.svg" alt="Whatsapp" />
+                 }<img src="/images/whatsapp.svg" alt="Whatsapp" />
                 </a>
                 <a
                   href={`mailto:?&subject=${blog.title}&body=${blog.description}`}
@@ -148,7 +148,7 @@ const Blog = (props) => {
                 >
                   {
                     // eslint-disable-next-line @next/next/no-img-element
-                 }<img src="./images/gmail.svg" alt="Gmail" />
+                 }<img src="/images/gmail.svg" alt="Gmail" />
                 </a>
               </div>
             </div>

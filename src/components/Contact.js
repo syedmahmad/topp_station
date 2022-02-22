@@ -15,7 +15,7 @@ const BusinessFormation = (props) => {
               {
                 // eslint-disable-next-line @next/next/no-img-element
               }<img
-                src="./images/contact-us-hero.jpg"
+                src="/images/contact-us-hero.jpg"
                 className="hero-img"
                 alt="Contact us"
               />

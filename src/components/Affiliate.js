@@ -12,7 +12,7 @@ const Affiliate = (props) => {
                   {
                     // eslint-disable-next-line @next/next/no-img-element
                  }<img
-                    src="./images/affiliate-hero.jpg"
+                    src="/images/affiliate-hero.jpg"
                     alt="Hero image"
                     className="img-fluid d-block"
                   />
@@ -39,7 +39,7 @@ const Affiliate = (props) => {
               <h2 className="heading-2 text-center">About The Program</h2>
               {
                 // eslint-disable-next-line @next/next/no-img-element
-              }<img src="./images/design.png" className="design" alt="design" />
+              }<img src="/images/design.png" className="design" alt="design" />
               <p className="paragraph mt-4 mt-md-5 text-center text-md-start w-md-75">
                 Thank you for your interest in joining the abcdefghi Affiliate
                 Program. Please provide us with the following information.
@@ -47,7 +47,7 @@ const Affiliate = (props) => {
               <h2 className="heading-2 text-center mt-5">About You</h2>
               {
                 // eslint-disable-next-line @next/next/no-img-element
-              }<img src="./images/design.png" className="design" alt="design" />
+              }<img src="/images/design.png" className="design" alt="design" />
               <p className="paragraph mt-4 mt-md-5 w-md-75 text-center text-md-start">
                 Are you an individual who will be promoting brands on your
                 personal social media or personal blog?
@@ -74,7 +74,7 @@ const Affiliate = (props) => {
               <h2 className="heading-2 mt-5 text-center">About Pepperjam</h2>
               {
                 // eslint-disable-next-line @next/next/no-img-element
-              }<img src="./images/design.png" className="design" alt="design" />
+              }<img src="/images/design.png" className="design" alt="design" />
               <p className="paragraph p-light mt-4 w-md-75 fw-light mb-5 text-center text-md-start">
                 Pepperjam is a leading performance marketing solution provider
                 redefining affiliate marketing through innovative technology and

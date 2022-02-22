@@ -42,7 +42,7 @@ const BusinessFormation = (props) => {
                   {
                     // eslint-disable-next-line @next/next/no-img-element
                  }<img
-                    src="./images//blog-1.jpg"
+                    src="/images//blog-1.jpg"
                     alt="Blog Image"
                     className="img-fluid"
                   />
@@ -50,19 +50,19 @@ const BusinessFormation = (props) => {
                     <div className="detail d-flex">
                       {
                         // eslint-disable-next-line @next/next/no-img-element
-                      }<img src="./images/clock.png" alt="clock" />
+                      }<img src="/images/clock.png" alt="clock" />
                       <span>January 25, 2021</span>
                     </div>
                     <div className="detail d-flex">
                       {
                         // eslint-disable-next-line @next/next/no-img-element
-                      }<img src="./images/user.png" alt="user" />
+                      }<img src="/images/user.png" alt="user" />
                       <span>Cristofer Westervelt</span>
                     </div>
                     <div className="detail d-flex">
                       {
                         // eslint-disable-next-line @next/next/no-img-element
-                      }<img src="./images/read.png" alt="user" className="big" />
+                      }<img src="/images/read.png" alt="user" className="big" />
                       <span>10 min read</span>
                     </div>
                   </div>
@@ -89,7 +89,7 @@ const BusinessFormation = (props) => {
                   {
                     // eslint-disable-next-line @next/next/no-img-element
                  }<img
-                    src="./images//blog-2.jpg"
+                    src="/images//blog-2.jpg"
                     alt="Blog Image"
                     className="img-fluid"
                   />
@@ -97,19 +97,19 @@ const BusinessFormation = (props) => {
                     <div className="detail d-flex">
                       {
                         // eslint-disable-next-line @next/next/no-img-element
-                      }<img src="./images/clock.png" alt="clock" />
+                      }<img src="/images/clock.png" alt="clock" />
                       <span>January 25, 2021</span>
                     </div>
                     <div className="detail d-flex">
                       {
                         // eslint-disable-next-line @next/next/no-img-element
-                      }<img src="./images/user.png" alt="user" />
+                      }<img src="/images/user.png" alt="user" />
                       <span>Cristofer Westervelt</span>
                     </div>
                     <div className="detail d-flex">
                       {
                         // eslint-disable-next-line @next/next/no-img-element
-                      }<img src="./images/read.png" alt="user" className="big" />
+                      }<img src="/images/read.png" alt="user" className="big" />
                       <span>10 min read</span>
                     </div>
                   </div>
@@ -142,7 +142,7 @@ const BusinessFormation = (props) => {
                   {
                     // eslint-disable-next-line @next/next/no-img-element
                  }<img
-                    src="./images//blog-3.jpg"
+                    src="/images//blog-3.jpg"
                     alt="Blog Image"
                     className="img-fluid"
                   />
@@ -150,19 +150,19 @@ const BusinessFormation = (props) => {
                     <div className="detail d-flex">
                       {
                         // eslint-disable-next-line @next/next/no-img-element
-                      }<img src="./images/clock.png" alt="clock" />
+                      }<img src="/images/clock.png" alt="clock" />
                       <span>January 25, 2021</span>
                     </div>
                     <div className="detail d-flex">
                       {
                         // eslint-disable-next-line @next/next/no-img-element
-                      }<img src="./images/user.png" alt="user" />
+                      }<img src="/images/user.png" alt="user" />
                       <span>Cristofer Westervelt</span>
                     </div>
                     <div className="detail d-flex">
                       {
                         // eslint-disable-next-line @next/next/no-img-element
-                      }<img src="./images/read.png" alt="user" className="big" />
+                      }<img src="/images/read.png" alt="user" className="big" />
                       <span>10 min read</span>
                     </div>
                   </div>
@@ -189,7 +189,7 @@ const BusinessFormation = (props) => {
                   {
                     // eslint-disable-next-line @next/next/no-img-element
                  }<img
-                    src="./images//blog-4.jpg"
+                    src="/images//blog-4.jpg"
                     alt="Blog Image"
                     className="img-fluid"
                   />
@@ -197,19 +197,19 @@ const BusinessFormation = (props) => {
                     <div className="detail d-flex">
                       {
                         // eslint-disable-next-line @next/next/no-img-element
-                      }<img src="./images/clock.png" alt="clock" />
+                      }<img src="/images/clock.png" alt="clock" />
                       <span>January 25, 2021</span>
                     </div>
                     <div className="detail d-flex">
                       {
                         // eslint-disable-next-line @next/next/no-img-element
-                      }<img src="./images/user.png" alt="user" />
+                      }<img src="/images/user.png" alt="user" />
                       <span>Cristofer Westervelt</span>
                     </div>
                     <div className="detail d-flex">
                       {
                         // eslint-disable-next-line @next/next/no-img-element
-                      }<img src="./images/read.png" alt="user" className="big" />
+                      }<img src="/images/read.png" alt="user" className="big" />
                       <span>10 min read</span>
                     </div>
                   </div>
@@ -243,7 +243,7 @@ const BusinessFormation = (props) => {
                   {
                     // eslint-disable-next-line @next/next/no-img-element
                  }<img
-                    src="./images//blog-5.jpg"
+                    src="/images//blog-5.jpg"
                     alt="Blog Image"
                     className="img-fluid"
                   />
@@ -251,19 +251,19 @@ const BusinessFormation = (props) => {
                     <div className="detail d-flex">
                       {
                         // eslint-disable-next-line @next/next/no-img-element
-                      }<img src="./images/clock.png" alt="clock" />
+                      }<img src="/images/clock.png" alt="clock" />
                       <span>January 25, 2021</span>
                     </div>
                     <div className="detail d-flex">
                       {
                         // eslint-disable-next-line @next/next/no-img-element
-                      }<img src="./images/user.png" alt="user" />
+                      }<img src="/images/user.png" alt="user" />
                       <span>Cristofer Westervelt</span>
                     </div>
                     <div className="detail d-flex">
                       {
                         // eslint-disable-next-line @next/next/no-img-element
-                      }<img src="./images/read.png" alt="user" className="big" />
+                      }<img src="/images/read.png" alt="user" className="big" />
                       <span>10 min read</span>
                     </div>
                   </div>
@@ -290,7 +290,7 @@ const BusinessFormation = (props) => {
                   {
                     // eslint-disable-next-line @next/next/no-img-element
                  }<img
-                    src="./images//blog-6.jpg"
+                    src="/images//blog-6.jpg"
                     alt="Blog Image"
                     className="img-fluid"
                   />
@@ -298,19 +298,19 @@ const BusinessFormation = (props) => {
                     <div className="detail d-flex">
                       {
                         // eslint-disable-next-line @next/next/no-img-element
-                      }<img src="./images/clock.png" alt="clock" />
+                      }<img src="/images/clock.png" alt="clock" />
                       <span>January 25, 2021</span>
                     </div>
                     <div className="detail d-flex">
                       {
                         // eslint-disable-next-line @next/next/no-img-element
-                      }<img src="./images/user.png" alt="user" />
+                      }<img src="/images/user.png" alt="user" />
                       <span>Cristofer Westervelt</span>
                     </div>
                     <div className="detail d-flex">
                       {
                         // eslint-disable-next-line @next/next/no-img-element
-                      }<img src="./images/read.png" alt="user" className="big" />
+                      }<img src="/images/read.png" alt="user" className="big" />
                       <span>10 min read</span>
                     </div>
                   </div>
@@ -343,7 +343,7 @@ const BusinessFormation = (props) => {
                   {
                     // eslint-disable-next-line @next/next/no-img-element
                  }<img
-                    src="./images//blog-7.jpg"
+                    src="/images//blog-7.jpg"
                     alt="Blog Image"
                     className="img-fluid"
                   />
@@ -351,19 +351,19 @@ const BusinessFormation = (props) => {
                     <div className="detail d-flex">
                       {
                         // eslint-disable-next-line @next/next/no-img-element
-                      }<img src="./images/clock.png" alt="clock" />
+                      }<img src="/images/clock.png" alt="clock" />
                       <span>January 25, 2021</span>
                     </div>
                     <div className="detail d-flex">
                       {
                         // eslint-disable-next-line @next/next/no-img-element
-                      }<img src="./images/user.png" alt="user" />
+                      }<img src="/images/user.png" alt="user" />
                       <span>Cristofer Westervelt</span>
                     </div>
                     <div className="detail d-flex">
                       {
                         // eslint-disable-next-line @next/next/no-img-element
-                      }<img src="./images/read.png" alt="user" className="big" />
+                      }<img src="/images/read.png" alt="user" className="big" />
                       <span>10 min read</span>
                     </div>
                   </div>
@@ -540,7 +540,7 @@ const BusinessFormation = (props) => {
                   {
                     // eslint-disable-next-line @next/next/no-img-element
                  }<img
-                    src="./images/author-1.jpg"
+                    src="/images/author-1.jpg"
                     alt="author"
                     className="img-fluid author-img"
                   />
@@ -558,7 +558,7 @@ const BusinessFormation = (props) => {
                   {
                     // eslint-disable-next-line @next/next/no-img-element
                  }<img
-                    src="./images/author-2.jpg"
+                    src="/images/author-2.jpg"
                     alt="author"
                     className="img-fluid author-img"
                   />
@@ -576,7 +576,7 @@ const BusinessFormation = (props) => {
                   {
                     // eslint-disable-next-line @next/next/no-img-element
                  }<img
-                    src="./images/author-3.jpg"
+                    src="/images/author-3.jpg"
                     alt="author"
                     className="img-fluid author-img"
                   />
@@ -594,7 +594,7 @@ const BusinessFormation = (props) => {
                   {
                     // eslint-disable-next-line @next/next/no-img-element
                  }<img
-                    src="./images/author-4.jpg"
+                    src="/images/author-4.jpg"
                     alt="author"
                     className="img-fluid author-img"
                   />

@@ -9,7 +9,7 @@ const BusinessFormation = (props) => {
               {
                 // eslint-disable-next-line @next/next/no-img-element
               }<img
-                src="./images/Rectangle.png"
+                src="/images/Rectangle.png"
                 alt="Reactangle"
                 className="img-fluid"
               />

@@ -32,7 +32,7 @@ const LimitedLiability = (props) => {
                   {
                     // eslint-disable-next-line @next/next/no-img-element
                  }<img
-                    src="./images/hero.jpg"
+                    src="/images/hero.jpg"
                     alt="Hero image"
                     className="img-fluid d-block"
                   />
@@ -54,7 +54,7 @@ const LimitedLiability = (props) => {
                   <figure className="p-3 d-inline-block mx-auto">
                     {
                       // eslint-disable-next-line @next/next/no-img-element
-                    }<img src="./images/reason-1.png" alt="Reason Image" />
+                    }<img src="/images/reason-1.png" alt="Reason Image" />
                   </figure>
                 </div>
                 <h4 className="heading-4 text-center">Attract Investor</h4>
@@ -68,7 +68,7 @@ const LimitedLiability = (props) => {
                   <figure className="p-3 d-inline-block mx-auto">
                     {
                       // eslint-disable-next-line @next/next/no-img-element
-                    }<img src="./images/reason-2.png" alt="Reason Image" />
+                    }<img src="/images/reason-2.png" alt="Reason Image" />
                   </figure>
                 </div>
                 <h4 className="heading-4 text-center">Entice employees</h4>
@@ -82,7 +82,7 @@ const LimitedLiability = (props) => {
                   <figure className="p-3 d-inline-block mx-auto">
                     {
                       // eslint-disable-next-line @next/next/no-img-element
-                    }<img src="./images/reason-1.png" alt="Reason Image" />
+                    }<img src="/images/reason-1.png" alt="Reason Image" />
                   </figure>
                 </div>
                 <h4 className="heading-4 text-center">Look more official​</h4>
@@ -102,7 +102,7 @@ const LimitedLiability = (props) => {
                 {
                   // eslint-disable-next-line @next/next/no-img-element
                }<img
-                  src="./images/process.jpg"
+                  src="/images/process.jpg"
                   alt="Process Image"
                   height="300px"
                   width="100%"
@@ -533,14 +533,14 @@ const LimitedLiability = (props) => {
                   {
                     // eslint-disable-next-line @next/next/no-img-element
                  }<img
-                    src="./images/prev.png"
+                    src="/images/prev.png"
                     className="non-hover"
                     alt="previous button"
                   />
                   {
                     // eslint-disable-next-line @next/next/no-img-element
                  }<img
-                    src="./images/next.png"
+                    src="/images/next.png"
                     className="hover w-25 w-md-100"
                     alt="previous button"
                   />
@@ -549,14 +549,14 @@ const LimitedLiability = (props) => {
                   {
                     // eslint-disable-next-line @next/next/no-img-element
                  }<img
-                    src="./images/prev.png"
+                    src="/images/prev.png"
                     className="non-hover"
                     alt="previous button"
                   />
                   {
                     // eslint-disable-next-line @next/next/no-img-element
                  }<img
-                    src="./images/next.png"
+                    src="/images/next.png"
                     className="hover w-25 w-md-100"
                     alt="previous button"
                   />
@@ -607,7 +607,7 @@ const LimitedLiability = (props) => {
                     <div className="review p-4 bg-light">
                       {
                         // eslint-disable-next-line @next/next/no-img-element
-                      }<img src="./images/blockquote.png" alt="blockquote" />
+                      }<img src="/images/blockquote.png" alt="blockquote" />
                       <p className="paragraph mt-3">
                         Our team has been working at frispes for almost 2 months
                         because our office still closed. During working at
@@ -619,7 +619,7 @@ const LimitedLiability = (props) => {
                       <div className="details d-flex gap-2 mt-4 align-items-center">
                         {
                           // eslint-disable-next-line @next/next/no-img-element
-                        }<img src="./images/review-1.png" alt="author" />
+                        }<img src="/images/review-1.png" alt="author" />
                         <div className="author">
                           <h5 className="heading-5">Pedro Ibanez</h5>
                           <p>UI Designer at Google</p>
@@ -631,7 +631,7 @@ const LimitedLiability = (props) => {
                     <div className="review p-4 bg-light">
                       {
                         // eslint-disable-next-line @next/next/no-img-element
-                      }<img src="./images/blockquote.png" alt="blockquote" />
+                      }<img src="/images/blockquote.png" alt="blockquote" />
                       <p className="paragraph mt-3">
                         Our team has been working at frispes for almost 2 months
                         because our office still closed. During working at
@@ -643,7 +643,7 @@ const LimitedLiability = (props) => {
                       <div className="details d-flex gap-2 mt-4 align-items-center">
                         {
                           // eslint-disable-next-line @next/next/no-img-element
-                        }<img src="./images/review-2.png" alt="author" />
+                        }<img src="/images/review-2.png" alt="author" />
                         <div className="author">
                           <h5 className="heading-5">Pedro Ibanez</h5>
                           <p>UI Designer at Google</p>
@@ -655,7 +655,7 @@ const LimitedLiability = (props) => {
                     <div className="review p-4 bg-light">
                       {
                         // eslint-disable-next-line @next/next/no-img-element
-                      }<img src="./images/blockquote.png" alt="blockquote" />
+                      }<img src="/images/blockquote.png" alt="blockquote" />
                       <p className="paragraph mt-3">
                         Our team has been working at frispes for almost 2 months
                         because our office still closed. During working at
@@ -667,7 +667,7 @@ const LimitedLiability = (props) => {
                       <div className="details d-flex gap-2 mt-4 align-items-center">
                         {
                           // eslint-disable-next-line @next/next/no-img-element
-                        }<img src="./images/review-3.png" alt="author" />
+                        }<img src="/images/review-3.png" alt="author" />
                         <div className="author">
                           <h5 className="heading-5">Pedro Ibanez</h5>
                           <p>UI Designer at Google</p>

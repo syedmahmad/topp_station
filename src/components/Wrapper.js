@@ -664,7 +664,7 @@ const Wrapper = (props) => {
               >
                 {
                   // eslint-disable-next-line @next/next/no-img-element
-               }<img src="./images/facebook.svg" alt="Facebook" />
+               }<img src="/images/facebook.svg" alt="Facebook" />
               </a>
               {
 // eslint-disable-next-line 
@@ -674,7 +674,7 @@ const Wrapper = (props) => {
               >
                 {
                   // eslint-disable-next-line @next/next/no-img-element
-               }<img src="./images/twitter.svg" alt="Instagram" />
+               }<img src="/images/twitter.svg" alt="Instagram" />
               </a>
               {
 // eslint-disable-next-line 
@@ -684,7 +684,7 @@ const Wrapper = (props) => {
               >
                 {
                   // eslint-disable-next-line @next/next/no-img-element
-               }<img src="./images/linkedin.svg" alt="Twitter" />
+               }<img src="/images/linkedin.svg" alt="Twitter" />
               </a>
               {
 // eslint-disable-next-line 
@@ -694,7 +694,7 @@ const Wrapper = (props) => {
               >
                 {
                   // eslint-disable-next-line @next/next/no-img-element
-               }<img src="./images/whatsapp.svg" alt="Whatsapp" />
+               }<img src="/images/whatsapp.svg" alt="Whatsapp" />
               </a>
               {
 // eslint-disable-next-line 
@@ -704,7 +704,7 @@ const Wrapper = (props) => {
               >
                 {
                   // eslint-disable-next-line @next/next/no-img-element
-               }<img src="./images/gmail.svg" alt="Gmail" />
+               }<img src="/images/gmail.svg" alt="Gmail" />
               </a>
             </div>
             <div className="header-chat-btn d-none d-md-block">
@@ -731,7 +731,7 @@ const Wrapper = (props) => {
               <button className="close--btn" onClick={closeCookies}>
                 {
                   // eslint-disable-next-line @next/next/no-img-element
-               }<img src="./images/close.svg" alt="close button" />
+               }<img src="/images/close.svg" alt="close button" />
               </button>
               <p className="cookies--text m-0">
                 By clicking accept cookies you agree to our use of cookies and
@@ -757,7 +757,7 @@ const Wrapper = (props) => {
           <figure>
             {
               // eslint-disable-next-line @next/next/no-img-element
-            }<img src="./images/logo.svg" alt="logo" />
+            }<img src="/images/logo.svg" alt="logo" />
           </figure>
           <div className="footer--links d-flex gap-3 gap-md-5 flex-wrap">
             {

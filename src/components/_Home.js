@@ -10,7 +10,7 @@ const Home = (props) => {
         // eslint-disable-next-line @next/next/no-img-element
       }<img
         className="hero-bg position-absolute w-50"
-        src="./images/bg.svg"
+        src="/images/bg.svg"
         alt="background"
       />
       <section className="banner-section">
@@ -60,7 +60,7 @@ const Home = (props) => {
                       // eslint-disable-next-line @next/next/no-img-element
                     }<img
                       style={{ width: '23px' }}
-                      src="./images/search.svg"
+                      src="/images/search.svg"
                       alt="search"
                     />
                   </button>
@@ -93,7 +93,7 @@ const Home = (props) => {
               <figure className="card-image">
                 {
                   // eslint-disable-next-line @next/next/no-img-element
-               }<img src="./images/card-1.png" alt="card image" />
+               }<img src="/images/card-1.png" alt="card image" />
               </figure>
               <a href="#" className="card-tag d-inline-block">
                 Logo Design
@@ -112,7 +112,7 @@ const Home = (props) => {
               <figure className="card-image">
                 {
                   // eslint-disable-next-line @next/next/no-img-element
-               }<img src="./images/card-3.png" alt="card image" />
+               }<img src="/images/card-3.png" alt="card image" />
               </figure>
               <a href="#" className="card-tag d-inline-block">
                 Logo Design
@@ -131,7 +131,7 @@ const Home = (props) => {
               <figure className="card-image">
                 {
                   // eslint-disable-next-line @next/next/no-img-element
-               }<img src="./images/card-2.png" alt="card image" />
+               }<img src="/images/card-2.png" alt="card image" />
               </figure>
               <a href="#" className="card-tag d-inline-block">
                 Logo Design
@@ -173,7 +173,7 @@ const Home = (props) => {
             <figure className="col-md-5">
               {
                 // eslint-disable-next-line @next/next/no-img-element
-              }<img src="./images/highlight.png" alt="highlighted image" />
+              }<img src="/images/highlight.png" alt="highlighted image" />
             </figure>
           </div>
         </div>
@@ -196,7 +196,7 @@ const Home = (props) => {
               <figure className="card-image">
                 {
                   // eslint-disable-next-line @next/next/no-img-element
-               }<img src="./images/card-1.png" alt="card image" />
+               }<img src="/images/card-1.png" alt="card image" />
               </figure>
               <a href="#" className="card-tag d-inline-block">
                 Logo Design
@@ -215,7 +215,7 @@ const Home = (props) => {
               <figure className="card-image">
                 {
                   // eslint-disable-next-line @next/next/no-img-element
-               }<img src="./images/card-3.png" alt="card image" />
+               }<img src="/images/card-3.png" alt="card image" />
               </figure>
               <a href="#" className="card-tag d-inline-block">
                 Logo Design
@@ -298,7 +298,7 @@ const Home = (props) => {
               <figure className="card-image">
                 {
                   // eslint-disable-next-line @next/next/no-img-element
-               }<img src="./images/card-1.png" alt="card image" />
+               }<img src="/images/card-1.png" alt="card image" />
               </figure>
               <a href="#" className="card-tag d-inline-block">
                 Logo Design
@@ -317,7 +317,7 @@ const Home = (props) => {
               <figure className="card-image">
                 {
                   // eslint-disable-next-line @next/next/no-img-element
-               }<img src="./images/card-3.png" alt="card image" />
+               }<img src="/images/card-3.png" alt="card image" />
               </figure>
               <a href="#" className="card-tag d-inline-block">
                 Logo Design
@@ -336,7 +336,7 @@ const Home = (props) => {
               <figure className="card-image">
                 {
                   // eslint-disable-next-line @next/next/no-img-element
-               }<img src="./images/card-2.png" alt="card image" />
+               }<img src="/images/card-2.png" alt="card image" />
               </figure>
               <a href="#" className="card-tag d-inline-block">
                 Logo Design
@@ -361,7 +361,7 @@ const Home = (props) => {
           // eslint-disable-next-line @next/next/no-img-element
         }<img
           className="section-bg position-absolute d-none d-sm-block"
-          src="./images/section-bg.png"
+          src="/images/section-bg.png"
           alt="section background"
         />
         <div className="dotted-border container mt-5"></div>
@@ -384,7 +384,7 @@ const Home = (props) => {
               <figure className="card-image">
                 {
                   // eslint-disable-next-line @next/next/no-img-element
-               }<img src="./images/card-1.png" alt="card image" />
+               }<img src="/images/card-1.png" alt="card image" />
               </figure>
               <a href="#" className="card-tag d-inline-block">
                 Logo Design
@@ -403,7 +403,7 @@ const Home = (props) => {
               <figure className="card-image">
                 {
                   // eslint-disable-next-line @next/next/no-img-element
-               }<img src="./images/card-3.png" alt="card image" />
+               }<img src="/images/card-3.png" alt="card image" />
               </figure>
               <a href="#" className="card-tag d-inline-block">
                 Logo Design
@@ -422,7 +422,7 @@ const Home = (props) => {
               <figure className="card-image">
                 {
                   // eslint-disable-next-line @next/next/no-img-element
-               }<img src="./images/card-2.png" alt="card image" />
+               }<img src="/images/card-2.png" alt="card image" />
               </figure>
               <a href="#" className="card-tag d-inline-block">
                 Logo Design
@@ -447,7 +447,7 @@ const Home = (props) => {
           // eslint-disable-next-line @next/next/no-img-element
         }<img
           className="section-bg position-absolute d-none d-sm-block"
-          src="./images/section-bg.png"
+          src="/images/section-bg.png"
           alt="section background"
         />
         <div className="dotted-border container mt-5"></div>
@@ -470,7 +470,7 @@ const Home = (props) => {
               <figure className="card-image">
                 {
                   // eslint-disable-next-line @next/next/no-img-element
-               }<img src="./images/card-1.png" alt="card image" />
+               }<img src="/images/card-1.png" alt="card image" />
               </figure>
               <a href="#" className="card-tag d-inline-block">
                 Logo Design
@@ -489,7 +489,7 @@ const Home = (props) => {
               <figure className="card-image">
                 {
                   // eslint-disable-next-line @next/next/no-img-element
-               }<img src="./images/card-3.png" alt="card image" />
+               }<img src="/images/card-3.png" alt="card image" />
               </figure>
               <a href="#" className="card-tag d-inline-block">
                 Logo Design
@@ -508,7 +508,7 @@ const Home = (props) => {
               <figure className="card-image">
                 {
                   // eslint-disable-next-line @next/next/no-img-element
-               }<img src="./images/card-2.png" alt="card image" />
+               }<img src="/images/card-2.png" alt="card image" />
               </figure>
               <a href="#" className="card-tag d-inline-block">
                 Logo Design
