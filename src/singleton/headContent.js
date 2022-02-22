@@ -34,7 +34,7 @@ function HeadContent({
 			<meta property="og:site_name" content="Toppstation"/>
 			<meta property="og:title" content={title || "Toppstation | Enabling Entrepreneurs worldwide"} />
 			<meta property="og:description" content={description || "Discover benefits of building a business from a pro-business environment, including how tax incentives, rule of law, connectivity to other markets, strategic location and skilled workforce benefit you regardless where you are."} />
-			<meta property="og:image" itemProp="image" content={"/images/social.jpeg"}/>
+			<meta property="og:image" itemProp="image" content={"http://graphics8.nytimes.com/images/2011/12/08/technology/bits-newtwitter/bits-newtwitter-tmagArticle.jpg"}/>
 			
 			<link rel="canonical" href={url + route} />
 			{/* <meta property="fb:app_id" content="1757891891170883" /> */}
@@ -44,7 +44,7 @@ function HeadContent({
 			<meta property="twitter:url" content={url + route}/>
 			<meta property="twitter:title" content={title || "Toppstation | Enabling Entrepreneurs worldwide"}/>
 			<meta property="twitter:description" content={description || "Discover benefits of building a business from a pro-business environment, including how tax incentives, rule of law, connectivity to other markets, strategic location and skilled workforce benefit you regardless where you are."} />
-			<meta property="twitter:image" content="/images/social.jpeg"/>
+			<meta property="twitter:image" content="http://graphics8.nytimes.com/images/2011/12/08/technology/bits-newtwitter/bits-newtwitter-tmagArticle.jpg"/>
 		</Head>
 	);
 }
