@@ -10,30 +10,43 @@ function HeadContent({
 
 	const url = "https://toppstation.com/";
 
+	// Whatsapp: size up to 300. Anything above 300px will not work in WhatsApp.
+
+
 	return (
 		<Head>
-			<meta charSet="UTF-8" />
-			<base href="/" />
-			<title>{title}</title>
-			<meta name="title" property="og:title" content={title} />
-			<meta name="description" property="og:description" content={description} />
-			<meta name="keywords" content={keywords ? keywords : ""} />
-			<meta name="viewport" content="width=device-width,minimum-scale=1, initial-scale=1, maximum-scale=1, user-scalable=no" />
+			<meta charSet="utf-8" />
+			<link rel="icon" href="%PUBLIC_URL%/favicon-32x32.png" />
+			<meta name="viewport"
+				content="width=device-width  initial-scale=1, maximum-scale=1 , height=device-height, initial-scale=1.0, user-scalable=no,user-scalable=0;" />
 
+			{/* MS Tile - for Microsoft apps */}
+			<meta name="msapplication-TileImage" content="http://www.example.com/image01.jpg"/> 
+
+			<meta property="og:site_name" content="Toppstation | Enabling Entrepreneurs worldwide"/>
+			<meta property="og:title" content={title || "Toppstation | Enabling Entrepreneurs worldwide"} />
+			<meta property="og:description" content={description || "Discover benefits of building a business from a pro-business environment, including how tax incentives, rule of law, connectivity to other markets, strategic location and skilled workforce benefit you regardless where you are."} />
+			<meta property="og:image" itemProp="image" content={"/images/300.png"}/>
+			<meta property="og:type" content="website" />
 			<link rel="canonical" href={url + route} />
-			<meta name="type" property="og:type" content="website" />
-			<meta name="title" property="og:title" content={title} />
-			<meta name="url" property="og:url" content={url + route} />
-			<meta name="image" property="og:image" content={"https://d310ox1f4zno4b.cloudfront.net/static-content/Landing+Page+Banner+.png"} />
-			<meta name="description" property="og:description" content={description} />
-			<meta property="fb:app_id" content="1757891891170883" />
+			{/* <meta property="fb:app_id" content="1757891891170883" /> */}
+			{/* No need to change anything here  */}
+			<meta property="og:type" content="website" />
+			<meta property="og:image:type" content="image/jpeg"/>
 
-			<meta name="twitter:title" content={title} />
+			{/* <!-- Size of image. Any size up to 300. Anything above 300px will not work in WhatsApp --> */}
+			<meta property="og:image:width" content="300"/>
+			<meta property="og:image:height" content="300"/>
+
+			{/* <!-- Website to visit when clicked in fb or WhatsApp--> */}
+			<meta property="og:url" content={url + route} />
+
+			{/* Twitter special case  */}
 			<meta name="twitter:card" content="summary_large_image"/>
-			<meta name="twitter:card" content="summary" />
-			<meta name="twitter:site" content={url + route} />
-			<meta name="twitter:description" content={description} />
-			<meta name="twitter:image" content={"https://d310ox1f4zno4b.cloudfront.net/static-content/Landing+Page+Banner+.png"} />
+			<meta name="twitter:site" content="Toppstation | Enabling Entrepreneurs worldwide"/>
+			<meta name="twitter:title" content={title || "Toppstation | Enabling Entrepreneurs worldwide"}/>
+			<meta name="twitter:description" content={description || "Discover benefits of building a business from a pro-business environment, including how tax incentives, rule of law, connectivity to other markets, strategic location and skilled workforce benefit you regardless where you are."} />
+			<meta name="twitter:image" content="/images/300.png"/>
 		</Head>
 	);
 }
