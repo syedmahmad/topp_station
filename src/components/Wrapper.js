@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { useRouter } from 'next/router';
-import absoluteUrl from 'next-absolute-url'
 import { useEffect } from 'react/cjs/react.development';
 
 const Wrapper = (props) => {
