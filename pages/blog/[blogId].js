@@ -25,7 +25,7 @@ function BlogPage(props) {
 }
 
 export async function getServerSideProps(context) {
-	const blog = await axios.get("https://toppstation.com/api/blogs/" + context.query.blogId);
+	const blog = await axios.get(`${process.env.NEXT_PUBLIC_API_URL}/api/blogs/${context.query.blogId}`);
 
 	return {
 		props: {

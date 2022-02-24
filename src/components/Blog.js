@@ -1,8 +1,7 @@
 import React, { useEffect, useContext, useState } from 'react'
-
+import { useRouter } from 'next/router';
 // import { Link, useHistory, useParams } from "react-router-dom"
-
-import { useRouter } from 'next/router'
+// import { useRouter } from 'next/router'
 
 import { BlogContext } from '../context/BlogState'
 
@@ -11,34 +10,32 @@ const Blog = (props) => {
   const { getBlogs, getBlog, ...blogsState } = useContext(BlogContext)
   const [blog, setblog] = useState(props.blog || {})
   const [categories, setCategories] = useState([])
-  const [posts, setPosts] = useState(props.blogs || [])
+  const [origin, setOrigin] = useState("");
+  const [posts, setPosts] = useState([])
 
-  let { blogId } = router.query //useParams();
+  //let { blogId } = router.query //useParams();
 
-  // useEffect(() => {
-  //   // getBlog(blogId).then((res) => {
-  //     // setblog(res[0])
-  //     getBlogs().then((ress) => {
-  //       setPosts(ress)
-  //       createCategories(blog ,ress)
-  //     });
-  //   // });
-  // }, [blogId]);
+  useEffect(() => {
+    getBlogs().then((ress) => {
+      setPosts(ress)
+      createCategories(blog ,ress)
+    });
+    setOrigin(window.location.origin);
+    // setOrigin("https://topp-station.vercel.app");
+  }, []);
 
   const createCategories = (item, list) => {
-    let categorieslist = { tag: item[0], posts: [] }
-    list.forEach((listItem) => {
+    let categorieslist = { tag: item?.tags[0], posts: [] };
+    list.forEach(listItem => {
       listItem.tags.forEach((tag) => {
-        if (
-          categorieslist.posts.length < 3 &&
-          listItem._id != item[0]._id &&
+        if (categorieslist.posts.length < 3 &&
+          listItem._id != item._id &&
           !findIfInList(listItem, categorieslist.posts) &&
-          tag == item[0].tags[0]
-        ) {
+          tag == item.tags[0]) {
           categorieslist.posts.push(listItem)
         }
-      })
-    })
+      });
+    });
     setCategories(categorieslist)
   }
 
@@ -111,7 +108,7 @@ const Blog = (props) => {
             <div className="col-12 col-md-6">
               <div className="social-icons__wrapper d-flex align-items-center justify-content-start justify-content-md-end gap-3">
                 <a
-                  href={`https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Ftoppstation.com%2Fblog%${blog._id}`}
+                  href={`https://www.facebook.com/sharer/sharer.php?u=${origin + router.asPath}`}
                   className="d-flex align-items-center justify-content-start social-icon__wrapper rounded-circle p-2 bg-white"
                 >
                   {
@@ -119,7 +116,7 @@ const Blog = (props) => {
                  }<img src="/images/facebook.svg" alt="Facebook" />
                 </a>
                 <a
-                  href={`https://twitter.com/intent/tweet?url=https%3A%2F%2Ftoppstation.com%2Fblog%2F${blog._id}&text=${blog.title}`}
+                  href={`https://twitter.com/intent/tweet?url=${origin + router.asPath}&text=Join Toppstation today to have access to our latest tweets.`}
                   className="d-flex align-items-center justify-content-start social-icon__wrapper rounded-circle p-2 bg-white"
                 >
                   {
@@ -127,7 +124,7 @@ const Blog = (props) => {
                  }<img src="/images/twitter.svg" alt="Twitter" />
                 </a>
                 <a
-                  href={`http://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Ftoppstation.com%2Fblog%2F${blog._id}&text=${blog.title}`}
+                  href={`https://www.linkedin.com/shareArticle?mini=true&${origin + router.asPath}&title=Kimbocorp - Toppstation&summary=Discover benefits of building a business from a pro-business environment, including how tax incentives, rule of law, connectivity to other markets, strategic location and skilled workforce benefit you regardless where you are.&source=`}
                   className="d-flex align-items-center justify-content-start social-icon__wrapper rounded-circle p-2 bg-white"
                 >
                   {
@@ -135,7 +132,7 @@ const Blog = (props) => {
                  }<img src="/images/linkedin.svg" alt="Linkedin" />
                 </a>
                 <a
-                  href={`https://api.whatsapp.com/send?text=${blog.title}%0ahttps%3A%2F%2Ftoppstation.com%2Fblog%2F${blog._id}`}
+                  href={`https://api.whatsapp.com/send?text=Join Toppstation today to have access to our latest news.%0a${origin + router.asPath}`}
                   className="d-flex align-items-center justify-content-start social-icon__wrapper rounded-circle p-2 bg-white"
                 >
                   {
@@ -143,7 +140,7 @@ const Blog = (props) => {
                  }<img src="/images/whatsapp.svg" alt="Whatsapp" />
                 </a>
                 <a
-                  href={`mailto:?&subject=${blog.title}&body=${blog.description}`}
+                  href={`mailto:?&subject=Enabling Entrepreneurs worldwide&body=${origin + router.asPath}`}
                   className="d-flex align-items-center justify-content-start social-icon__wrapper rounded-circle p-2 bg-white"
                 >
                   {
@@ -215,7 +212,7 @@ const Blog = (props) => {
           </div>
         </div>
       </section>
-      {/* <section className="popular-blog-posts">
+      <section className="popular-blog-posts">
         {categories.posts && categories.posts.length > 0 &&<div className="container">
           <h2 className="h2 my-4">You Might Like</h2>
           <div className="row gap-5 gap-sm-5 gap-md-0">
@@ -241,7 +238,7 @@ const Blog = (props) => {
             })}
           </div>
         </div>}
-      </section> */}
+      </section>
     </div>
   )
 }

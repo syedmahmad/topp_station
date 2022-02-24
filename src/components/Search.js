@@ -18,7 +18,7 @@ const initialState = {
 }
 
 const Search = (props) => {
-  const { getBlog, ...blogsState } = useContext(BlogContext)
+  const { getBlogs, getBlog, ...blogsState } = useContext(BlogContext);
   const [searchData, setSearchData] = useState(props?.search || '')
   const [searchInput, setSearchInput] = useState('')
   const [filteredResults, setFilteredResults] = useState([])
@@ -38,40 +38,21 @@ const Search = (props) => {
     paramsCategory = props?.search
   }
 
-  useEffect( () => {
-    (async () => {
-      await axios
-      .get('api/getblogs')
-      .then(async (res) => {
-        dispatch({
-          type: 'BLOGS_LOADED',
-          payload: res.data,
-        })
-        await setPosts(res.data)
-        await setOriginalPosts(res.data)
-      })
-      .catch((err) => {
-        console.log(err.message)
-        dispatch({
-          type: 'BLOGS_ERROR',
-        })
-      })
-    var getValue = window.localStorage.getItem('searchInput')
+  useEffect(() => {
+    getBlogs().then((res) => {
+      setPosts(res)
+    });
+    var getValue = window.localStorage.getItem("searchInput");
     if (getValue != null) {
-      setSearchInput(getValue)
-      searchFunction(getValue)
-      window.localStorage.removeItem('searchInput')
+      setSearchInput(getValue);
+      searchFunction(getValue);
+      window.localStorage.removeItem("searchInput");
     }
     if (props?.search) {
-      searchItems(props?.search)
-      setSearchData(props?.search)
+      searchItems(props?.search);
+      setSearchData(props?.search);
     }
-    // if (match && match.params.category) {
-    //   searchItems(match.params.category);
-    //   setSearchData(match.params.category);
-    // }
-    })();
-  }, [paramsCategory])
+  }, [paramsCategory]);
 
   // Filter posts
   const searchItems = (searchValue) => {
@@ -82,21 +63,19 @@ const Search = (props) => {
     searchFunction(searchInput)
   }
   const searchFunction = (searchInput) => {
-    if (searchInput !== '') {
-      const filteredData = originalPosts?.filter((item) => {
-        return Object.values(item)
-          .join('')
-          .toLowerCase()
-          .includes(searchInput.toLowerCase())
-      })
-      console.log(filteredData, '///////filteredData')
-      if (filteredData.length > 0) {
-        setPosts(filteredData)
-      }
-
-      //setFilteredResults(filteredData);
-    } else setPosts(originalPosts)
-  }
+    getBlogs().then((res) => {
+      if (searchInput !== "") {
+        const filteredData = res.filter((item) => {
+          return Object.values(item)
+            .join("")
+            .toLowerCase()
+            .includes(searchInput.toLowerCase());
+        });
+        setPosts(filteredData);
+        //setFilteredResults(filteredData);
+      } else setPosts(res);
+    });
+  };
   // Sort posts
   /** */
   function reverseArr(input) {

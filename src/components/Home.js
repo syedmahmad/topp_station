@@ -27,14 +27,10 @@ const Home = (props) => {
   }
 
   useEffect(() => {
-    (async () => {
-      await axios
-      .get('api/getblogs')
-      .then((res) => {
-        setPosts(res?.data)
-        createCategories(res?.data)
-      })
-    })();
+    getBlogs().then((res) => {
+      setPosts(res)
+      createCategories(res)
+    });
   }, [])
 
   const findInCategories = (categorieslist, tag) => {
