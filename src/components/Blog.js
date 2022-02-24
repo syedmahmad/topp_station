@@ -124,7 +124,7 @@ const Blog = (props) => {
                  }<img src="/images/twitter.svg" alt="Twitter" />
                 </a>
                 <a
-                  href={`https://www.linkedin.com/shareArticle?mini=true&${origin + router.asPath}&title=Kimbocorp - Toppstation&summary=Discover benefits of building a business from a pro-business environment, including how tax incentives, rule of law, connectivity to other markets, strategic location and skilled workforce benefit you regardless where you are.&source=`}
+                  href={`https://www.linkedin.com/sharing/share-offsite/?url=${origin + router.asPath}`}
                   className="d-flex align-items-center justify-content-start social-icon__wrapper rounded-circle p-2 bg-white"
                 >
                   {
